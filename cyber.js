@@ -63,3 +63,21 @@ window.SG_READY=new Promise(resolve=>{
   }
   setTimeout(tick,4000);
 })();
+
+/* ===== 히어로 타이틀 · 글자별 홀로그램 호버 ===== */
+(function init(){
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);return}
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches||!matchMedia('(hover:hover)').matches)return;
+  const targets=[document.getElementById('heroTitle'),document.querySelector('.hero-tagline')].filter(Boolean);
+  targets.forEach(el=>{
+    const walk=n=>{[...n.childNodes].forEach(c=>{
+      if(c.nodeType===3){const f=document.createDocumentFragment();for(const ch of c.textContent){const s=document.createElement('span');s.className='ch';s.textContent=ch;f.appendChild(s)}c.replaceWith(f)}
+      else if(c.nodeType===1&&c.tagName!=='BR')walk(c)})};
+    walk(el);el.classList.add('holo-text');
+    const chars=[...el.querySelectorAll('.ch')];let cur=-1;
+    const set=i=>{if(i===cur)return;cur=i;chars.forEach(c=>c.classList.remove('hot','warm','cool'));if(i<0)return;
+      chars[i].classList.add('hot');[chars[i-1],chars[i+1]].forEach(c=>c&&c.classList.add('warm'));[chars[i-2],chars[i+2]].forEach(c=>c&&c.classList.add('cool'))};
+    el.addEventListener('pointermove',e=>{const t=e.target.closest('.ch');set(t?chars.indexOf(t):-1)});
+    el.addEventListener('pointerleave',()=>set(-1));
+  });
+})();
