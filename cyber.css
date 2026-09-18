@@ -135,8 +135,9 @@ body.booting .hero h1 .word{animation-play-state:paused}
 /* ===== 인덱스 자유 구성: 히어로 아트 ===== */
 .hero-x{min-height:100svh;padding:120px 0 90px;justify-content:center}
 .hero-x:after{background:linear-gradient(180deg,rgba(6,6,10,.45),transparent 30%,transparent 70%,#06060a)}
-.hero-art{position:absolute;top:0;right:0;bottom:0;width:min(70vw,1240px);z-index:0;pointer-events:none}
-.hero-art img{width:100%;height:100%;object-fit:cover;filter:hue-rotate(34deg);object-position:right center;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 40%);mask-image:linear-gradient(90deg,transparent 0,#000 40%);animation:artIn 2.4s var(--ease-out) both}
+.hero-art{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,6,10,.82) 0,rgba(6,6,10,.6) 32%,rgba(6,6,10,.15) 55%,transparent 75%),linear-gradient(180deg,rgba(6,6,10,.5) 0,transparent 22%,transparent 80%,rgba(6,6,10,.7) 100%)}
+.hero-art video{width:100%;height:100%;object-fit:cover;filter:hue-rotate(34deg) brightness(.72) saturate(.85);object-position:center center;animation:artIn 2.4s var(--ease-out) both}
 @keyframes artIn{from{opacity:0;transform:translateX(50px) scale(1.04)}}
 .hero-x .wrap{z-index:1}
 .hero-copy{max-width:760px}
@@ -146,7 +147,7 @@ body.booting .hero h1 .word{animation-play-state:paused}
 .hero-tagline{font-family:var(--font-hud);font-size:clamp(.66rem,1.1vw,.9rem);letter-spacing:.24em;color:rgba(240,240,248,.75)}
 .hero-tagline em{font-style:normal;color:var(--neon);text-shadow:0 0 14px var(--glow)}
 .hero-x .hero-actions{justify-content:flex-start;margin-top:34px}
-@media(max-width:900px){.hero-art{width:100%}.hero-art img{object-position:72% center;opacity:.55;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 96%);mask-image:linear-gradient(180deg,#000 45%,transparent 96%)}.hero-x h1{font-size:clamp(1.8rem,8vw,2.6rem)}.hero-x{padding-top:150px}}
+@media(max-width:900px){.hero-art video{object-position:60% center;opacity:.55;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 96%);mask-image:linear-gradient(180deg,#000 45%,transparent 96%)}.hero-x h1{font-size:clamp(1.8rem,8vw,2.6rem)}.hero-x{padding-top:150px}}
 
 /* ===== AI 코어 섹션: 프레임 밖 안드로이드 ===== */
 .ai-core{padding-top:40px}
