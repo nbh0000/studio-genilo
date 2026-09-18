@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+
+Sitemap: https://genilo.kr/sitemap.xml
