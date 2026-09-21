@@ -1,0 +1,79 @@
+<!doctype html><html lang="ko"><head>
+  <link rel="preconnect" href="https://api.genilo.kr">
+  <meta name="color-scheme" content="dark">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Genilo 관리자</title><link rel="icon" href="/favicon.svg">  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="application-name" content="Genilo">
+  <meta name="apple-mobile-web-app-title" content="Genilo">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <meta name="msapplication-TileColor" content="#09090c">
+  <meta name="description" content="Genilo 관리자 콘솔 로그인.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://genilo.kr/admin.html">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Genilo">
+  <meta property="og:title" content="Genilo 관리자">
+  <meta property="og:description" content="Genilo 관리자 콘솔 로그인.">
+  <meta property="og:url" content="https://genilo.kr/admin.html">
+  <meta property="og:image" content="https://genilo.kr/assets/creative-collage.webp">
+  <meta property="og:image:alt" content="Genilo에서 제작할 수 있는 이미지·영상 결과 예시">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Genilo 관리자">
+  <meta name="twitter:description" content="Genilo 관리자 콘솔 로그인.">
+  <meta name="twitter:image" content="https://genilo.kr/assets/creative-collage.webp">
+  <meta name="twitter:image:alt" content="Genilo에서 제작할 수 있는 이미지·영상 결과 예시">
+  <link rel="stylesheet" href="/site-quality.css">
+  <link rel="stylesheet" href="/commercial-shell.css">
+  <script type="module" crossorigin src="/assets/admin-DTyYYtUS.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/growth-runtime-BsKwnrXR.js">
+  <link rel="modulepreload" crossorigin href="/assets/preload-helper-BXl3LOEh.js">
+  <link rel="modulepreload" crossorigin href="/assets/supabase-client-D8zR8z4z.js">
+  <link rel="stylesheet" crossorigin href="/assets/admin-CUIsfOSp.css">
+</head>
+<body class="admin-locked">
+  <noscript class="javascript-required">일부 로그인·제작·결제 기능에는 JavaScript가 필요합니다. 정적 안내와 도움말은 계속 확인할 수 있습니다.</noscript>
+<a class="skip-link" href="#mainContent">본문 바로가기</a>
+<div class="auth-gate" id="authGate"><form id="adminLogin"><img src="/genilo-logo.svg" alt="Genilo" width="292" height="64" decoding="async"><span class="admin-kicker">SECURE ADMIN CONSOLE</span><h1>관리자 로그인</h1><p>관리자 권한이 확인된 계정만 콘솔에 접근할 수 있습니다.</p><label><span>이메일</span><input id="adminEmail" type="email" autocomplete="username" inputmode="email" maxlength="254" placeholder="관리자 이메일" required></label><label><span>비밀번호</span><input id="adminPassword" type="password" autocomplete="current-password" minlength="8" maxlength="72" placeholder="비밀번호" required></label><button type="submit">안전하게 로그인</button><small id="loginMessage" role="status" aria-live="polite"></small><a href="index.html">← Genilo 홈으로</a></form></div>
+<aside><a class="logo" href="index.html" aria-label="Genilo 홈"><b aria-hidden="true">Z</b><span>Genilo ADMIN</span></a><nav aria-label="관리자 메뉴"><button type="button" class="active" data-tab="dashboard" aria-pressed="true">▦ <span>대시보드</span></button><button type="button" data-tab="growth" aria-pressed="false">↗ <span>성장 퍼널</span></button><button type="button" data-tab="users" aria-pressed="false">◎ <span>사용자</span></button><button type="button" data-tab="activity" aria-pressed="false">✦ <span>AI 사용 현황</span></button><button type="button" data-tab="models" aria-pressed="false">◇ <span>모델·랭킹</span></button><button type="button" data-tab="margins" aria-pressed="false">₩ <span>수익성</span></button><button type="button" data-tab="settings" aria-pressed="false">⚙ <span>서비스 설정</span></button></nav><div class="admin-user"><span id="adminIdentity">관리자</span><button type="button" id="logoutBtn">로그아웃</button></div><a class="back" href="index.html">← 사이트 보기</a></aside>
+<main id="mainContent" tabindex="-1">
+  <header><div><small>ADMIN CONSOLE</small><h2 id="pageTitle">대시보드</h2></div><div class="status"><i></i><span id="syncStatus">데이터 확인 중</span></div></header>
+  <section id="dashboard" class="panel active">
+    <div class="metric-grid"><article><span>전체 가입자</span><strong id="totalUsers">0</strong><small id="newUsersToday">오늘 +0명</small></article><article><span>오늘 매출</span><strong id="revenueToday">₩0</strong><small id="revenueMonth">이번 달 ₩0</small></article><article><span>오늘 생성</span><strong id="generationsToday">0</strong><small id="creditsUsedToday">0 크레딧 사용</small></article><article><span>미처리 문의</span><strong id="openContacts">0</strong><small>답변 대기</small></article></div>
+    <div class="dashboard-grid"><article class="card"><h2>모델별 사용량</h2><div class="bars" id="modelUsage"></div></article><article class="card"><h2>제품별 매출</h2><div class="bars" id="productSales"></div></article></div>
+    <article class="card"><h2>최근 생성 작업</h2><div class="table-wrap"><table><thead><tr><th>유형</th><th>모델</th><th>상태</th><th>크레딧</th><th>시간</th></tr></thead><tbody id="recentJobs"></tbody></table></div></article>
+  </section>
+  <section id="growth" class="panel">
+    <article class="card growth-toolbar"><div><h2>동의 기반 성장 퍼널</h2><p class="help">선택 분석에 동의한 방문의 방향성 표본입니다. 전체 방문자 수나 동의율로 해석하지 마세요. 문의 집계는 실제 접수 기록을 별도로 사용합니다.</p></div><div class="model-sync-actions"><label><span class="sr-only">성장 집계 기간</span><select id="growthWindow"><option value="7">최근 7일</option><option value="30" selected>최근 30일</option><option value="90">최근 90일</option></select></label><button class="primary" type="button" id="growthReload">다시 계산</button></div><p class="help" id="growthStatus" role="status" aria-live="polite"></p></article>
+    <div class="dashboard-grid" id="growthSummary"></div>
+    <div class="dashboard-grid"><article class="card"><h2>전환 단계</h2><p class="help">각 단계의 고유 세션 수와 첫 단계 대비 비율입니다.</p><div class="funnel-steps" id="growthFunnel"></div></article><article class="card"><h2>유입 출처</h2><p class="help">UTM source 또는 이전 사이트 호스트만 표시합니다.</p><div class="bars" id="growthSources"></div></article></div>
+    <div class="dashboard-grid"><article class="card"><h2>페이지별 동의 세션</h2><div class="bars" id="growthPages"></div></article><article class="card"><h2>문의 유형</h2><div class="table-wrap"><table><thead><tr><th>유형</th><th>접수</th><th>미처리</th></tr></thead><tbody id="growthLeadRows"></tbody></table></div></article></div>
+  </section>
+  <section id="users" class="panel"><article class="card"><h2>최근 가입 사용자</h2><div class="table-wrap"><table><thead><tr><th>사용자</th><th>요금제</th><th>보유 크레딧</th><th>가입일</th></tr></thead><tbody id="recentUsers"></tbody></table></div></article></section>
+  <section id="activity" class="panel"><article class="card"><h2>AI 제품 사용 현황</h2><p class="help">모델별 생성 요청과 제품별 결제 실적을 실시간 집계합니다.</p><div class="dashboard-grid"><div class="bars" id="modelUsageDetail"></div><div class="bars" id="productSalesDetail"></div></div></article></section>
+  <section id="margins" class="panel">
+    <article class="card margin-toolbar">
+      <div><h2>실제 수익성</h2><p class="help">요금제 페이지의 마진은 원가 상한을 기준으로 한 예상치입니다. 여기 숫자는 실제로 청구된 공급자 원가와 실제 결제 매출로 계산한 결과입니다. 매출은 결제 시점, 원가는 생성 시점에 잡히므로 같은 고객끼리 대응되는 값이 아니라 기간 전체의 지표입니다.</p></div>
+      <div class="model-sync-actions"><label><span class="sr-only">집계 기간</span><select id="marginWindow"><option value="7">최근 7일</option><option value="30" selected>최근 30일</option><option value="90">최근 90일</option></select></label><button class="primary" type="button" id="marginReload">다시 계산</button></div>
+      <p class="help" id="marginStatus" role="status" aria-live="polite"></p>
+    </article>
+    <div class="dashboard-grid" id="marginSummary"></div>
+    <article class="card"><h2>모델별 원가와 마진</h2><p class="help">실제 공급자 청구액이 없는 건은 견적 원가로 계산합니다.</p><div class="table-wrap"><table><thead><tr><th>모델</th><th>작업</th><th>실패</th><th>견적 원가</th><th>실제 원가</th><th>청구 크레딧</th><th>크레딧 매출</th><th>마진</th></tr></thead><tbody id="marginModelRows"></tbody></table></div></article>
+    <article class="card"><h2>워크플로별 매출</h2><p class="help">크레딧은 선불이므로, 워크플로가 끌어 쓴 크레딧의 가치입니다.</p><div class="table-wrap"><table><thead><tr><th>워크플로</th><th>프로젝트</th><th>크레딧</th><th>크레딧 매출</th></tr></thead><tbody id="marginWorkflowRows"></tbody></table></div></article>
+  </section>
+  <section id="models" class="panel">
+    <article class="card model-admin-toolbar">
+      <div><h2>외부 모델과 랭킹 동기화</h2><p class="help">새 모델은 discovered로만 저장됩니다. 가격·옵션 테스트와 공급자 매핑을 완료한 뒤에만 available 및 실행 활성화가 가능합니다.</p></div>
+      <div class="model-sync-actions"><button class="primary" type="button" data-sync-source="artificial-analysis">성능 순위 동기화</button><button class="primary" type="button" data-sync-source="openrouter">OpenRouter 동기화</button></div>
+      <p class="help" id="modelAdminStatus" role="status" aria-live="polite"></p>
+    </article>
+    <article class="card"><div class="model-admin-heading"><h2>모델 카탈로그</h2><label><span class="sr-only">모델 검색</span><input id="adminModelSearch" type="search" placeholder="모델 또는 개발사 검색" autocomplete="off" enterkeyhint="search" spellcheck="false" maxlength="100"></label></div><div class="table-wrap"><table class="model-admin-table"><thead><tr><th>모델</th><th>상태</th><th>테스트</th><th>공급자 매핑</th><th>실행</th><th>관리</th></tr></thead><tbody id="adminModelRows"></tbody></table></div></article>
+    <article class="card"><h2>최근 동기화</h2><div class="table-wrap"><table><thead><tr><th>출처</th><th>상태</th><th>수신</th><th>실패 엔드포인트</th><th>완료</th></tr></thead><tbody id="rankingSyncRows"></tbody></table></div></article>
+  </section>
+  <section id="settings" class="panel"><article class="card"><h2>서비스 설정</h2><div class="form-grid"><label>공지 문구<input id="promoInput" autocomplete="off" maxlength="200" spellcheck="true"></label><label>신규 가입 무료 크레딧<input id="signupCredits" type="number" value="800" inputmode="numeric" disabled aria-describedby="signupCreditHelp"><small id="signupCreditHelp">보안을 위해 DB 가입 트리거와 서버에서 800으로 고정됩니다.</small></label><label class="wide">운영 메모<textarea id="operationsNote" rows="6" maxlength="4000" spellcheck="true"></textarea></label></div><button type="button" class="primary" id="saveSettings">설정 저장</button><p class="help">설정은 브라우저가 아닌 Supabase에 저장됩니다.</p></article></section>
+</main>  <script src="/consent-manager.js" defer></script>
+  <script src="/journey-runtime.js" type="module"></script>
+</body></html>
