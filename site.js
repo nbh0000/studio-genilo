@@ -73,7 +73,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 (window.SG_READY||Promise.resolve()).then(()=>document.querySelectorAll('.reveal,.stagger,.hero .scramble').forEach(el=>io.observe(el)));
 
 /* ===== 히어로 단어 등장 ===== */
-(function(){const h=$('heroTitle');if(!h)return;const parts=h.innerHTML.split('<br>');let i=0;h.innerHTML=parts.map(line=>line.trim().split(' ').map(w=>`<span class="word" style="animation-delay:${.15+i++*.09}s">${w}</span>`).join(' ')).join('<br>')})();
+(function(){const h=$('heroTitle');if(!h)return;const parts=h.innerHTML.split('<br>');let i=0;h.innerHTML=parts.map(line=>line.trim().split(' ').map(w=>`<span class="word" style="animation-delay:${.5+i++*.09}s">${w}</span>`).join(' ')).join('<br>')})();
 
 /* ===== 카드 스포트라이트 & 커서 글로우 ===== */
 const cursor=$('cursor');

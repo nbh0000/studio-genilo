@@ -11,7 +11,7 @@ window.SG_READY=new Promise(resolve=>{
   const LOGS=['> sg.core ........ ok','> assets ......... ok','> link ........... secured','> ui ............. compiled'];
   const dur=quick?650:2600,start=performance.now();let stage=-1,logi=0,finished=false;
   function done(){if(finished)return;finished=true;try{sessionStorage.setItem('sg_boot','1')}catch{}
-    boot.classList.add('out');document.body.classList.remove('booting');setTimeout(()=>boot.remove(),1000);resolve()}
+    boot.classList.add('out');document.body.classList.add('seq-run');document.body.classList.remove('booting');setTimeout(()=>boot.remove(),1000);resolve()}
   function frame(now){
     const t=Math.min(1,(now-start)/dur),e=1-Math.pow(1-t,3),p=Math.round(e*100);
     fill.style.width=p+'%';dot.style.left=p+'%';pctEl.textContent=String(p).padStart(3,'0')+'%';
