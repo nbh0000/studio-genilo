@@ -21,7 +21,7 @@ Studio Genilo는 서울 마포에서 홈페이지와 웹앱을 제작합니다. 
 
 ## 검색 최적화 서비스
 
-[SEO·AEO·GEO 무료 체커](https://genilo.kr/seochecker.html)는 네이버 SEO 38개, 구글 SEO 60개, AEO 40개, GEO 42개 등 총 180개 항목으로 공개 페이지 상태를 진단합니다. 각 영역의 점수, 잘된 점, 개선할 점과 수정 방향을 보여 줍니다. 내부 배점과 판정 공식은 공개하지 않습니다.
+[SEO·AEO·GEO 무료 체커](https://genilo.kr/seochecker.html)는 네이버 SEO 44개, 구글 SEO 78개, AEO 48개, GEO 50개 등 총 220개 항목으로 공개 페이지 상태를 진단합니다. DNS·TCP·TLS·TTFB·HTML 다운로드 같은 네트워크 단계와 각 영역의 점수, 잘된 점, 개선할 점과 수정 방향을 보여 줍니다. 내부 배점과 판정 공식은 공개하지 않습니다.
 
 ## 주요 링크
 
