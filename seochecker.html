@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="application-name" content="제닐로">
 <meta name="description" content="무료 SEO 점수 체크 도구. 네이버 SEO, 구글 SEO, AEO, GEO 지수와 네트워크 속도를 220개 항목으로 분석하고 잘된 점과 개선 방법을 안내합니다.">
 <title>무료 SEO 점수 체크 · 네이버·구글·GEO 지수 | Studio Genilo</title>
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -14,7 +15,7 @@
 <link rel="canonical" href="https://genilo.kr/seochecker.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="Studio Genilo">
+<meta property="og:site_name" content="제닐로">
 <meta property="og:title" content="SEO·AEO·GEO 체커 | Studio Genilo">
 <meta property="og:description" content="네이버 SEO, 구글 SEO, AEO, GEO 점수와 네트워크 속도를 220개 항목으로 확인합니다.">
 <meta property="og:url" content="https://genilo.kr/seochecker.html">
@@ -36,6 +37,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://genilo.kr/seochecker.html#app","name":"Studio Genilo SEO·AEO·GEO 체커","url":"https://genilo.kr/seochecker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 점수와 네트워크 속도, 강점, 우선 개선점을 220개 항목으로 확인하는 무료 도구.","provider":{"@type":"Organization","name":"Studio Genilo","url":"https://genilo.kr/"}},{"@type":"FAQPage","@id":"https://genilo.kr/seochecker.html#guide-faq","mainEntity":[{"@type":"Question","name":"SEO 점수와 SEO 지수는 무엇을 뜻하나요?","acceptedAnswer":{"@type":"Answer","text":"공개된 페이지가 검색엔진의 수집, 색인, 이해 기준을 얼마나 충족하는지 항목별 상태를 환산한 진단값입니다. 검색 순위를 보장하는 값은 아닙니다."}},{"@type":"Question","name":"무료 SEO 체크에서는 무엇을 검사하나요?","acceptedAnswer":{"@type":"Answer","text":"HTML, 응답 헤더, robots.txt, 사이트맵, 메타 태그, 본문 구조, 이미지, 링크, 구조화 데이터와 네트워크 응답 단계를 검사합니다."}},{"@type":"Question","name":"네이버 SEO 점수는 어떻게 확인하나요?","acceptedAnswer":{"@type":"Answer","text":"Yeti 접근, 네이버 사이트 소유 확인, 제목과 설명, canonical, 사이트맵, 공유 정보와 초기 HTML 본문 제공 여부를 함께 확인합니다."}},{"@type":"Question","name":"구글 SEO 점수는 무엇이 다른가요?","acceptedAnswer":{"@type":"Answer","text":"Googlebot 접근과 색인 지시뿐 아니라 구조화 데이터, 모바일 대응, 이미지와 JavaScript 로딩, DNS·TLS·TTFB 같은 전송 성능을 더 세밀하게 봅니다."}},{"@type":"Question","name":"GEO 점수와 구글 GEO는 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"생성형 검색과 AI 답변이 업체, 저자, 근거, 대표 URL을 식별하고 인용하기 쉬운지를 평가하는 진단입니다."}},{"@type":"Question","name":"AEO 점수는 어떻게 높이나요?","acceptedAnswer":{"@type":"Answer","text":"실제 질문을 제목으로 쓰고 바로 아래에 짧은 답을 제공하며 FAQ, 출처, 작성자, 날짜, 표와 정의 목록을 의미에 맞게 구성합니다."}},{"@type":"Question","name":"네트워크 속도도 SEO 점수에 포함되나요?","acceptedAnswer":{"@type":"Answer","text":"DNS, TCP, TLS, 첫 응답 시간, HTML 다운로드와 전송 처리량을 분리해 기술 SEO 항목에서 확인합니다."}},{"@type":"Question","name":"SEO 점수가 높으면 상단 노출이 보장되나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 점수는 기술과 콘텐츠 기반의 준비 상태를 보여주는 진단값이며 실제 순위는 경쟁도, 검색 의도, 품질, 지역과 검색 서비스 정책에 따라 달라집니다."}}]}]}
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://genilo.kr/#website","url":"https://genilo.kr/","name":"제닐로","alternateName":["Studio Genilo","스튜디오 제닐로"],"inLanguage":"ko-KR"}</script>
 </head>
 <body data-theme="dark" data-page="seochecker">
 <div class="grid-bg"></div>
@@ -147,48 +149,56 @@
     </div>
     <div class="seo-learning-layout">
       <nav class="seo-learning-nav" aria-label="SEO 진단 가이드 목차">
-        <a href="#guide-seo-score">SEO 점수·지수</a><a href="#guide-seo-check">무료 SEO 체크</a><a href="#guide-naver-seo">네이버 SEO</a><a href="#guide-google-seo">구글 SEO</a><a href="#guide-geo-score">GEO 지수</a><a href="#guide-aeo-score">AEO 점수</a><a href="#guide-network-speed">네트워크 속도</a><a href="#guide-score-limit">점수의 한계</a>
+        <a href="seo-score.html">SEO 점수·지수</a><a href="free-seo-check.html">무료 SEO 체크</a><a href="naver-seo.html">네이버 SEO</a><a href="google-seo.html">구글 SEO</a><a href="geo-score.html">GEO 지수</a><a href="aeo-score.html">AEO 점수</a><a href="website-network-speed.html">네트워크 속도</a><a href="seo-score-limit.html">점수의 한계</a>
       </nav>
       <div class="seo-learning-articles">
         <article id="guide-seo-score">
           <h3>SEO 점수와 SEO 지수는 무엇을 뜻하나요?</h3>
           <p>SEO 점수 또는 SEO 지수는 공개된 페이지가 검색엔진의 수집·색인·이해 기준을 얼마나 충족하는지 항목별 상태를 환산한 진단값입니다. 제목, 설명, 대표 주소, 크롤러 접근, 본문 구조, 링크, 이미지, 구조화 데이터와 전송 성능을 함께 봐야 의미가 있습니다.</p>
           <p>높은 점수는 기본기가 잘 준비됐다는 뜻이지 특정 검색어의 상단 노출을 확정한다는 뜻은 아닙니다. 먼저 개선필요 항목을 없애고, 그다음 주의 항목을 페이지 목적과 업종에 맞게 판단하는 순서가 안전합니다.</p>
+          <p><a href="seo-score.html">SEO 점수·지수 해설 전체 보기</a></p>
         </article>
         <article id="guide-seo-check">
           <h3>무료 SEO 체크에서는 무엇을 검사하나요?</h3>
           <p>Studio Genilo SEO 체커는 브라우저 밖에서도 확인할 수 있는 HTML, HTTP 응답 헤더, robots.txt, sitemap.xml, RSS, llms.txt를 읽습니다. 네이버 SEO 44개, 구글 SEO 78개, AEO 48개, GEO 50개로 총 220개 항목을 분석합니다.</p>
           <ul><li>검색 수집: 응답 코드, HTTPS, 리다이렉트, robots와 사이트맵</li><li>페이지 이해: title, description, h1~h3, 본문과 내부 링크</li><li>표현·신뢰: 공유 이미지, 조직·저자·주소·연락처, 날짜와 출처</li><li>전송 품질: DNS, TCP, TLS, TTFB, HTML 다운로드와 캐시</li></ul>
+          <p><a href="free-seo-check.html">무료 SEO 체크 범위 자세히 보기</a></p>
         </article>
         <article id="guide-naver-seo">
           <h3>네이버 SEO 점수는 어떻게 확인하나요?</h3>
           <p>네이버 SEO는 Yeti 크롤러가 페이지에 접근할 수 있는지, 사이트 소유 확인 태그와 사이트맵이 준비됐는지, title·description·canonical·Open Graph가 서로 같은 페이지를 설명하는지 확인해야 합니다. 자바스크립트 실행 전의 초기 HTML에 제목과 핵심 설명이 들어 있는지도 중요합니다.</p>
           <p>네이버 서치어드바이저 등록만으로 끝나지는 않습니다. 사이트맵 안의 URL이 실제로 200 응답을 내는지, www와 비www 주소가 하나로 모이는지, 공유 미리보기와 검색 제목이 일관적인지까지 함께 점검해야 합니다.</p>
+          <p><a href="naver-seo.html">네이버 SEO 점검 가이드 보기</a></p>
         </article>
         <article id="guide-google-seo">
           <h3>구글 SEO 점수는 무엇이 다른가요?</h3>
           <p>구글 SEO 진단은 Googlebot 접근과 색인 지시뿐 아니라 모바일 viewport, JSON-LD 문법, 리치 결과 대상 스키마, 이미지 크기와 형식, 렌더링 차단 자원, 내부 링크와 URL 복잡도를 더 세밀하게 봅니다.</p>
           <p>이번 체커는 기술 SEO 안에서 DNS 조회, 서버 연결, TLS 협상, 첫 응답 시간, HTML 다운로드 구간도 분리합니다. 느린 단계가 서버 처리인지, 연결인지, 큰 문서 전송인지 구분해야 개선 방향이 달라집니다.</p>
+          <p><a href="google-seo.html">구글 SEO 점검 가이드 보기</a></p>
         </article>
         <article id="guide-geo-score">
           <h3>GEO 점수와 구글 GEO는 무엇인가요?</h3>
           <p>GEO는 생성형 검색과 AI 답변이 페이지의 업체, 사람, 서비스, 근거와 대표 URL을 식별하고 인용하기 쉬운지를 보는 진단입니다. 구글 AI 개요만을 위한 별도 공식 점수가 아니라 ChatGPT·Perplexity·Claude 같은 답변 환경까지 고려한 공개 신호 기반 평가입니다.</p>
           <p>Organization·Person·WebSite 엔티티의 @id 연결, 회사소개·연락처·개인정보처리방침, 외부 근거 링크, 최신 수정일, AI 크롤러 정책, sitemap·RSS·llms.txt 같은 발견 경로를 종합해 확인합니다.</p>
+          <p><a href="geo-score.html">GEO 지수 해설 전체 보기</a></p>
         </article>
         <article id="guide-aeo-score">
           <h3>AEO 점수는 어떻게 높이나요?</h3>
           <p>AEO는 사용자의 질문을 제목으로 쓰고 바로 아래 첫 문단에서 결론을 답하는 구성이 핵심입니다. FAQPage만 추가하는 것보다 화면에 실제 질문과 답이 보이고, 구조화 데이터의 문구와 일치하는지가 더 중요합니다.</p>
           <p>답변에는 필요할 때 가격·기간·기준일 같은 구체적 수치, 작성자와 검토자, 공식 출처를 연결합니다. 표는 caption과 th·scope를, 용어 설명은 dt·dd를 사용하면 답변 단위를 더 정확히 추출할 수 있습니다.</p>
+          <p><a href="aeo-score.html">AEO 점수 개선 가이드 보기</a></p>
         </article>
         <article id="guide-network-speed">
           <h3>네트워크 속도도 SEO 점수에 포함되나요?</h3>
           <p>포함됩니다. DNS는 도메인을 찾는 시간, TCP는 서버와 연결하는 시간, TLS는 HTTPS 보안 연결 시간, TTFB는 첫 응답 헤더가 도착할 때까지의 시간입니다. 이후 HTML 다운로드 시간과 전송 처리량을 별도로 계산합니다.</p>
           <p>TTFB가 느리면 서버 처리와 캐시를 먼저 보고, 연결 단계가 느리면 CDN과 배포 지역을 확인합니다. 다운로드 구간만 느리다면 HTML 크기, 압축, 인라인 코드와 불필요한 자원 요청을 줄이는 편이 효과적입니다.</p>
+          <p><a href="website-network-speed.html">네트워크 속도 해설 보기</a></p>
         </article>
         <article id="guide-score-limit">
           <h3>SEO 점수가 높으면 상단 노출이 보장되나요?</h3>
           <p>보장되지 않습니다. 실제 검색 순위는 검색 의도, 경쟁 문서, 콘텐츠 품질과 최신성, 사용자 위치, 브랜드 신뢰, 검색 서비스 정책에 따라 계속 달라집니다. 체커 점수는 이 중 외부에서 검증 가능한 기술·콘텐츠 기반을 정리한 진단값입니다.</p>
           <p>점수보다 중요한 것은 각 항목의 확인 근거와 수정 방법입니다. 개선 뒤에는 같은 URL을 다시 점검하고, 네이버 서치어드바이저와 Google Search Console의 실제 수집·색인 상태를 함께 확인하세요.</p>
+          <p><a href="seo-score-limit.html">SEO 점수의 한계 자세히 보기</a></p>
         </article>
       </div>
     </div>
@@ -198,7 +208,7 @@
 </main>
 
 <footer><div class="wrap">
-  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="about.html">회사소개</a><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="seochecker.html">SEO 체커</a></nav></div>
+  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="about.html">회사소개</a><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="seochecker.html">SEO 체커</a><a href="insights.html">검색 가이드</a></nav></div>
   <div class="biz reveal"><span><i>상호</i>에이아이 스튜디오 제닐로</span><span><i>대표자</i>문지석</span><span><i>사업자등록번호</i>846-11-03049</span><span><i>전화</i>010-4819-3459</span><span><i>이메일</i>nbh3459@gmail.com</span><span><i>주소</i>서울특별시 마포구 만리재로6길 3-20 (공덕동)</span></div>
   <div class="copy reveal"><span>© Studio Genilo. All rights reserved.</span><span>STUDIO GENILO · WEB DESIGN</span></div>
 </div></footer>

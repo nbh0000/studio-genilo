@@ -3,7 +3,7 @@
 set -e
 cd "$(dirname "$0")"
 rm -rf .dist && mkdir .dist
-git ls-files -co --exclude-standard | grep -vE '^(wrangler\.jsonc|deploy-dist\.sh|build\.py|_landing_backup\.html|\.gitignore)$' | while read -r f; do
+git ls-files | grep -vE '^(qa-artifacts/|wrangler\.jsonc|deploy-dist\.sh|build\.py|generate_guides\.py|_landing_backup\.html|\.gitignore)$' | while read -r f; do
   mkdir -p ".dist/$(dirname "$f")" && cp "$f" ".dist/$f"
 done
 echo "files: $(find .dist -type f | wc -l)"

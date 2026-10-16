@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Studio Genilo 업데이트</title>
-    <link>https://genilo.kr/</link>
-    <description>홈페이지 제작, 네이버·구글 SEO, AEO·GEO 점검 도구의 공개 업데이트입니다.</description>
-    <language>ko-KR</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://genilo.kr/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>네이버·구글 SEO, AEO, GEO 220개 항목 무료 점검</title>
-      <link>https://genilo.kr/seochecker.html</link>
-      <guid isPermaLink="true">https://genilo.kr/seochecker.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
-      <description><![CDATA[DNS·TCP·TLS·TTFB·다운로드, 서버·캐시·메타·콘텐츠·구조화 데이터·신뢰 페이지를 네 영역 220개 항목으로 진단하고 공개 가능한 근거와 개선 방법을 안내합니다.]]></description>
-    </item>
-    <item>
-      <title>디자인 좋고 SEO에 강한 홈페이지 제작</title>
-      <link>https://genilo.kr/</link>
-      <guid isPermaLink="true">https://genilo.kr/</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
-      <description><![CDATA[네이버·구글 검색 노출에 필요한 기술 구조와 콘텐츠 기반을 기획 단계부터 함께 설계하는 반응형 홈페이지 제작 안내입니다.]]></description>
-    </item>
-    <item>
-      <title>Studio Genilo 회사소개</title>
-      <link>https://genilo.kr/about.html</link>
-      <guid isPermaLink="true">https://genilo.kr/about.html</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
-      <description><![CDATA[제작 원칙, 가격 범위, 작업 기간, 검색 설정 범위와 운영 주체 정보를 확인할 수 있습니다.]]></description>
-    </item>
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>제닐로 검색·제작 가이드</title><link>https://genilo.kr/insights.html</link><description>홈페이지 제작, 네이버·구글 SEO, AEO·GEO와 무료 점검 가이드입니다.</description><language>ko-KR</language><lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://genilo.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <item><title>웹페이지 상단노출, 검색 상단에 보이기 위해 준비할 것</title><link>https://genilo.kr/webpage-top-ranking.html</link><guid isPermaLink="true">https://genilo.kr/webpage-top-ranking.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹페이지 상단노출을 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 하나의 고유 URL과 그 안의 제목·본문·링크·이미지 관점에서 설명합니다.]]></description></item>
+    <item><title>웹페이지 SEO, 수집·색인·본문을 점검하는 기준</title><link>https://genilo.kr/webpage-seo.html</link><guid isPermaLink="true">https://genilo.kr/webpage-seo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹페이지 SEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 하나의 고유 URL과 그 안의 제목·본문·링크·이미지 관점에서 설명합니다.]]></description></item>
+    <item><title>웹페이지 GEO, AI 검색이 이해하고 인용하기 쉬운 구조</title><link>https://genilo.kr/webpage-geo.html</link><guid isPermaLink="true">https://genilo.kr/webpage-geo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹페이지 GEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 하나의 고유 URL과 그 안의 제목·본문·링크·이미지 관점에서 설명합니다.]]></description></item>
+    <item><title>웹페이지 AEO, 질문에 바로 답하는 콘텐츠 설계</title><link>https://genilo.kr/webpage-aeo.html</link><guid isPermaLink="true">https://genilo.kr/webpage-aeo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹페이지 AEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 하나의 고유 URL과 그 안의 제목·본문·링크·이미지 관점에서 설명합니다.]]></description></item>
+    <item><title>웹사이트 상단노출, 검색 상단에 보이기 위해 준비할 것</title><link>https://genilo.kr/website-top-ranking.html</link><guid isPermaLink="true">https://genilo.kr/website-top-ranking.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹사이트 상단노출을 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인 전체의 URL 구조·탐색·수집 정책·주제 묶음 관점에서 설명합니다.]]></description></item>
+    <item><title>웹사이트 SEO, 수집·색인·본문을 점검하는 기준</title><link>https://genilo.kr/website-seo.html</link><guid isPermaLink="true">https://genilo.kr/website-seo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹사이트 SEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인 전체의 URL 구조·탐색·수집 정책·주제 묶음 관점에서 설명합니다.]]></description></item>
+    <item><title>웹사이트 GEO, AI 검색이 이해하고 인용하기 쉬운 구조</title><link>https://genilo.kr/website-geo.html</link><guid isPermaLink="true">https://genilo.kr/website-geo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹사이트 GEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인 전체의 URL 구조·탐색·수집 정책·주제 묶음 관점에서 설명합니다.]]></description></item>
+    <item><title>웹사이트 AEO, 질문에 바로 답하는 콘텐츠 설계</title><link>https://genilo.kr/website-aeo.html</link><guid isPermaLink="true">https://genilo.kr/website-aeo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[웹사이트 AEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인 전체의 URL 구조·탐색·수집 정책·주제 묶음 관점에서 설명합니다.]]></description></item>
+    <item><title>홈페이지 상단노출, 검색 상단에 보이기 위해 준비할 것</title><link>https://genilo.kr/homepage-top-ranking.html</link><guid isPermaLink="true">https://genilo.kr/homepage-top-ranking.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[홈페이지 상단노출을 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인의 대표 진입 페이지와 업체·브랜드·핵심 서비스 정보 관점에서 설명합니다.]]></description></item>
+    <item><title>홈페이지 SEO, 수집·색인·본문을 점검하는 기준</title><link>https://genilo.kr/homepage-seo.html</link><guid isPermaLink="true">https://genilo.kr/homepage-seo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[홈페이지 SEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인의 대표 진입 페이지와 업체·브랜드·핵심 서비스 정보 관점에서 설명합니다.]]></description></item>
+    <item><title>홈페이지 GEO, AI 검색이 이해하고 인용하기 쉬운 구조</title><link>https://genilo.kr/homepage-geo.html</link><guid isPermaLink="true">https://genilo.kr/homepage-geo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[홈페이지 GEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인의 대표 진입 페이지와 업체·브랜드·핵심 서비스 정보 관점에서 설명합니다.]]></description></item>
+    <item><title>홈페이지 AEO, 질문에 바로 답하는 콘텐츠 설계</title><link>https://genilo.kr/homepage-aeo.html</link><guid isPermaLink="true">https://genilo.kr/homepage-aeo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[홈페이지 AEO를 준비할 때 확인할 기술 구조, 콘텐츠, 내부 링크와 진단 기준을 도메인의 대표 진입 페이지와 업체·브랜드·핵심 서비스 정보 관점에서 설명합니다.]]></description></item>
+    <item><title>SEO 점수와 SEO 지수, 숫자보다 먼저 읽을 것</title><link>https://genilo.kr/seo-score.html</link><guid isPermaLink="true">https://genilo.kr/seo-score.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[SEO 점수와 SEO 지수가 무엇을 측정하고 무엇을 보장하지 않는지, 진단 결과를 개선 우선순위로 읽는 방법을 설명합니다.]]></description></item>
+    <item><title>무료 SEO 체크, 주소 하나로 무엇을 확인할 수 있나요?</title><link>https://genilo.kr/free-seo-check.html</link><guid isPermaLink="true">https://genilo.kr/free-seo-check.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[무료 SEO 체크에서 HTML, 응답 헤더, robots.txt, 사이트맵, 메타 태그, 본문 구조, 링크와 네트워크 속도를 확인하는 범위를 설명합니다.]]></description></item>
+    <item><title>네이버 SEO 점검, Yeti와 사이트 정보를 함께 보는 법</title><link>https://genilo.kr/naver-seo.html</link><guid isPermaLink="true">https://genilo.kr/naver-seo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[네이버 SEO에서 Yeti 접근, 사이트 소유 확인, title, description, canonical, 사이트맵과 초기 HTML을 점검하는 기준입니다.]]></description></item>
+    <item><title>구글 SEO 점검, Googlebot부터 구조화 데이터까지</title><link>https://genilo.kr/google-seo.html</link><guid isPermaLink="true">https://genilo.kr/google-seo.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[구글 SEO에서 Googlebot 접근, 색인 지시, 모바일, 구조화 데이터, 이미지, 내부 링크와 전송 성능을 확인하는 방법입니다.]]></description></item>
+    <item><title>서울 마포 홈페이지 제작, 지역과 고객을 먼저 읽는 방법</title><link>https://genilo.kr/seoul-mapo-homepage.html</link><guid isPermaLink="true">https://genilo.kr/seoul-mapo-homepage.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[서울 마포 홈페이지 제작을 준비할 때 확인할 서비스 지역, 고객 질문, 모바일 상담 동선과 검색 정보 구조를 정리했습니다.]]></description></item>
+    <item><title>SEO 전문 홈페이지 제작, 디자인 전에 검색 구조부터</title><link>https://genilo.kr/seo-homepage-production.html</link><guid isPermaLink="true">https://genilo.kr/seo-homepage-production.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[SEO 전문 홈페이지 제작에서 제목, 정보 구조, 내부 링크, 구조화 데이터와 공개 후 점검을 어떻게 함께 설계하는지 안내합니다.]]></description></item>
+    <item><title>소상공인 홈페이지 제작, 문의로 이어지는 정보 순서</title><link>https://genilo.kr/small-business-homepage.html</link><guid isPermaLink="true">https://genilo.kr/small-business-homepage.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[소상공인 홈페이지에 필요한 서비스, 가격, 영업 지역, 연락 방법과 모바일 상담 동선을 실제 운영 관점에서 정리했습니다.]]></description></item>
+    <item><title>기업 홈페이지 제작, 사업과 신뢰를 연결하는 구조</title><link>https://genilo.kr/corporate-homepage.html</link><guid isPermaLink="true">https://genilo.kr/corporate-homepage.html</guid><pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate><description><![CDATA[기업 홈페이지의 회사소개, 사업 분야, 제품·서비스, 실적, 채용과 문의 정보를 신뢰도 높은 구조로 설계하는 기준입니다.]]></description></item>
+  </channel></rss>

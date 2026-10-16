@@ -1,4 +1,4 @@
-# Studio Genilo 공개 서비스 안내
+# 제닐로 (Studio Genilo) 공개 서비스 안내
 
 ## 소개
 
@@ -30,6 +30,17 @@ Studio Genilo는 서울 마포에서 홈페이지와 웹앱을 제작합니다. 
 - [제작 사례](https://genilo.kr/portfolio.html)
 - [제작 요금](https://genilo.kr/pricing.html)
 - [상담 신청](https://genilo.kr/contact.html)
+- [검색 가이드 전체 보기](https://genilo.kr/insights.html)
+- [무료 SEO 체크](https://genilo.kr/free-seo-check.html)
+- [네이버 SEO](https://genilo.kr/naver-seo.html)
+- [구글 SEO](https://genilo.kr/google-seo.html)
+- [SEO 점수와 지수](https://genilo.kr/seo-score.html)
+- [GEO 지수](https://genilo.kr/geo-score.html)
+- [AEO 점수](https://genilo.kr/aeo-score.html)
+- [웹사이트 네트워크 속도](https://genilo.kr/website-network-speed.html)
+- [웹페이지 상단노출](https://genilo.kr/webpage-top-ranking.html)
+- [웹사이트 SEO](https://genilo.kr/website-seo.html)
+- [홈페이지 GEO](https://genilo.kr/homepage-geo.html)
 - [개인정보처리방침](https://genilo.kr/privacy.html)
 - [이용약관](https://genilo.kr/terms.html)
 

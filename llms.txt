@@ -1,4 +1,4 @@
-# Studio Genilo
+# 제닐로 (Studio Genilo)
 
 > 서울 마포의 웹 제작 스튜디오입니다. 소상공인·기업 홈페이지, 랜딩페이지, 웹앱을 기획·디자인·개발하고 네이버·구글 검색 설정까지 진행합니다.
 
@@ -10,6 +10,10 @@
 - [제작 요금](https://genilo.kr/pricing.html)
 - [상담 신청](https://genilo.kr/contact.html)
 - [SEO·AEO·GEO 무료 체커](https://genilo.kr/seochecker.html)
+- [홈페이지 제작·SEO·GEO·AEO 검색 가이드](https://genilo.kr/insights.html)
+- [웹페이지 SEO 가이드](https://genilo.kr/webpage-seo.html)
+- [웹사이트 GEO 가이드](https://genilo.kr/website-geo.html)
+- [홈페이지 AEO 가이드](https://genilo.kr/homepage-aeo.html)
 - [개인정보처리방침](https://genilo.kr/privacy.html)
 
 ## 업체 정보
