@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio Genilo 업데이트</title>
+    <link>https://genilo.kr/</link>
+    <description>홈페이지 제작, 네이버·구글 SEO, AEO·GEO 점검 도구의 공개 업데이트입니다.</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://genilo.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>네이버·구글 SEO, AEO, GEO 180개 항목 무료 점검</title>
+      <link>https://genilo.kr/seochecker.html</link>
+      <guid isPermaLink="true">https://genilo.kr/seochecker.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
+      <description><![CDATA[서버·캐시·메타·콘텐츠·구조화 데이터·신뢰 페이지를 네 영역 180개 항목으로 진단하고 공개 가능한 근거와 개선 방법을 안내합니다.]]></description>
+    </item>
+    <item>
+      <title>디자인 좋고 SEO에 강한 홈페이지 제작</title>
+      <link>https://genilo.kr/</link>
+      <guid isPermaLink="true">https://genilo.kr/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
+      <description><![CDATA[네이버·구글 검색 노출에 필요한 기술 구조와 콘텐츠 기반을 기획 단계부터 함께 설계하는 반응형 홈페이지 제작 안내입니다.]]></description>
+    </item>
+    <item>
+      <title>Studio Genilo 회사소개</title>
+      <link>https://genilo.kr/about.html</link>
+      <guid isPermaLink="true">https://genilo.kr/about.html</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
+      <description><![CDATA[제작 원칙, 가격 범위, 작업 기간, 검색 설정 범위와 운영 주체 정보를 확인할 수 있습니다.]]></description>
+    </item>
+  </channel>
+</rss>

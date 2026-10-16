@@ -5,6 +5,7 @@
 ## 주요 공개 페이지
 
 - [홈페이지 제작 서비스와 핵심 안내](https://genilo.kr/)
+- [회사소개와 제작 기준](https://genilo.kr/about.html)
 - [제작 사례](https://genilo.kr/portfolio.html)
 - [제작 요금](https://genilo.kr/pricing.html)
 - [상담 신청](https://genilo.kr/contact.html)

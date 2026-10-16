@@ -132,7 +132,18 @@ header.hide .pill{transform:translateY(-120%);opacity:0}
 .portfolio{padding:0;display:flex;flex-direction:column}
 .portfolio-image{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
 .portfolio-image img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 1.2s var(--ease-out);will-change:transform}
+.portfolio-image.is-split>img{opacity:0}
+.portfolio-shards{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.portfolio-shard{position:absolute;inset:0;background-image:var(--shard-image);background-size:100% auto;background-position:top center;background-repeat:no-repeat;opacity:0;filter:blur(4px);transition:transform .68s var(--ease-out),opacity .5s ease-out,filter .62s ease-out,background-size 1.2s var(--ease-out);transition-delay:var(--shard-delay)}
+.portfolio-shard:nth-child(1){clip-path:polygon(0 0,50.5% 0,50.5% 50.5%,0 50.5%);transform:translate(-14%,-18%) rotate(-2deg)}
+.portfolio-shard:nth-child(2){clip-path:polygon(49.5% 0,100% 0,100% 50.5%,49.5% 50.5%);transform:translate(14%,-18%) rotate(2deg)}
+.portfolio-shard:nth-child(3){clip-path:polygon(0 49.5%,50.5% 49.5%,50.5% 100%,0 100%);transform:translate(-14%,18%) rotate(2deg)}
+.portfolio-shard:nth-child(4){clip-path:polygon(49.5% 49.5%,100% 49.5%,100% 100%,49.5% 100%);transform:translate(14%,18%) rotate(-2deg)}
+.portfolio.is-assembling .portfolio-shard{opacity:1;filter:blur(0);transform:translate(0,0) rotate(0)}
+.portfolio.has-shards .portfolio-body{opacity:0;transform:translateY(16px);transition:opacity .5s ease-out .34s,transform .58s var(--ease-out) .34s}
+.portfolio.has-shards.is-assembling .portfolio-body{opacity:1;transform:none}
 .portfolio:hover .portfolio-image img{transform:scale(1.06)}
+.portfolio:hover .portfolio-shard{background-size:106%}
 .portfolio-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.35));opacity:0;transition:opacity .4s}
 .portfolio:hover .portfolio-image:after{opacity:1}
 .portfolio-empty{aspect-ratio:16/10;display:grid;place-items:center;border-bottom:1px solid var(--line);color:var(--muted);font-size:.8rem;letter-spacing:.2em;background:repeating-linear-gradient(-45deg,transparent 0 12px,var(--ghost) 12px 13px)}
@@ -309,6 +320,24 @@ footer{position:relative;z-index:1;padding:80px 0 120px;border-top:1px solid var
 .answer-owner{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;margin:18px 0 0;color:var(--muted);font-size:.75rem}
 .answer-owner time{font-family:var(--font-mono)}
 
+/* index: SEO specialist evidence */
+.hero-summary{max-width:650px;margin:18px 0 0;color:var(--fg2);font-size:clamp(.92rem,1.4vw,1.05rem);line-height:1.75;word-break:keep-all}
+.seo-method{padding-top:76px}
+.seo-method-head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.72fr);column-gap:clamp(30px,6vw,88px);align-items:end}
+.seo-method-head .eyebrow{grid-column:1/-1}.seo-method-head .title{margin-bottom:0}.seo-method-head>p{margin:0;color:var(--fg2);font-size:.96rem;line-height:1.85;word-break:keep-all}
+.seo-method-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(34px,6vw,86px);margin-top:56px;align-items:start}
+.seo-ledger{padding:clamp(24px,3vw,38px);border:1px solid var(--line-strong);background:linear-gradient(145deg,rgba(210,76,255,.065),rgba(8,8,12,.76) 46%)}
+.seo-ledger h3{margin:0 0 12px;font-size:1.15rem}.seo-ledger-intro{margin:0 0 20px;color:var(--fg2);font-size:.84rem;line-height:1.7}.seo-ledger ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}.seo-ledger li{display:grid;grid-template-columns:100px minmax(0,1fr);gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.seo-ledger li b{color:var(--accent-2);font-size:.85rem}.seo-ledger li span,.seo-ledger dd{color:var(--fg2);font-size:.86rem;line-height:1.65}
+.seo-ledger dl{display:grid;gap:10px;margin:24px 0}.seo-ledger dl div{padding:12px 0;border-bottom:1px solid var(--line)}.seo-ledger dt{font-weight:750;margin-bottom:4px}.seo-ledger dd{margin:0}
+.seo-ledger table{width:100%;border-collapse:collapse;font-size:.78rem}.seo-ledger caption{text-align:left;margin-bottom:9px;color:var(--muted)}.seo-ledger :is(th,td){padding:10px 8px;border:1px solid var(--line);text-align:left}.seo-ledger th{color:var(--accent-2);background:var(--ghost)}
+.seo-answers{display:grid}.seo-answers article{position:relative;padding:4px 0 25px 42px;margin-bottom:22px;border-bottom:1px solid var(--line)}.seo-answers article:before{content:"+";position:absolute;left:0;top:0;display:grid;place-items:center;width:28px;height:28px;border:1px solid var(--line-strong);border-radius:50%;color:var(--accent-2)}
+.seo-answers h3{margin:0 0 9px;font-size:1.15rem;word-break:keep-all}.seo-answers p{margin:0;color:var(--fg2);font-size:.9rem;line-height:1.78}
+.seo-answers blockquote{margin:8px 0 24px;padding:17px 20px;border:1px solid var(--line-strong);background:var(--ghost)}.seo-answers blockquote q{display:block;font-weight:700}.seo-answers blockquote cite{display:block;margin-top:7px;color:var(--muted);font-size:.75rem;font-style:normal}
+.seo-sources{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.seo-sources span{width:100%;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.1em;color:var(--muted)}.seo-sources a{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--fg)!important;font-size:.74rem!important}.seo-owner{margin-top:18px!important;font-size:.72rem!important}.seo-owner time{float:right;color:var(--fg2)}
+@media(max-width:900px){.seo-method-head,.seo-method-layout{grid-template-columns:1fr}.seo-method-head>p{margin-top:20px}.seo-method-layout{gap:46px}.seo-method-head .eyebrow{grid-column:auto}}
+@media(max-width:560px){.seo-ledger li{grid-template-columns:1fr;gap:5px}.seo-ledger{padding:20px 16px}.seo-owner time{float:none;display:block;margin-top:5px}}
+
 /* mobile bar */
 .mobile-bar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:38;gap:8px;padding:8px;border-radius:999px;background:rgba(20,20,22,.9);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1)}
 .mobile-bar .btn{flex:1;padding:12px}
@@ -358,6 +387,7 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
 }
 @media (prefers-reduced-motion:reduce){
   .reveal,.stagger>*{opacity:1;transform:none;transition:none}
+  .portfolio-image.is-split>img{opacity:1}.portfolio-shards{display:none}.portfolio.has-shards .portfolio-body{opacity:1;transform:none;transition:none}
   .hero h1 .word{animation:none;opacity:1;transform:none}
   html{scroll-behavior:auto}
 }

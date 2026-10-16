@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 # AI 검색·사용자 요청형 크롤러는 공개 페이지 접근 허용
 User-agent: OAI-SearchBot

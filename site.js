@@ -160,4 +160,20 @@ if(matchMedia('(hover:none)').matches)cursor.style.display='none';
     requestAnimationFrame(frame)}
   requestAnimationFrame(frame);
 })();
+
+/* ===== 포트폴리오 이미지 조립 리빌 ===== */
+(function(){
+  const cards=[...document.querySelectorAll('.portfolio-grid .portfolio')];
+  if(!cards.length||matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  cards.forEach(card=>{
+    const frame=card.querySelector('.portfolio-image'),img=frame&&frame.querySelector('img');
+    if(!frame||!img)return;
+    const shards=document.createElement('span');shards.className='portfolio-shards';shards.setAttribute('aria-hidden','true');
+    const imageUrl=img.currentSrc||img.src;
+    for(let i=0;i<4;i++){const shard=document.createElement('span');shard.className='portfolio-shard';shard.style.setProperty('--shard-image','url("'+imageUrl.replace(/"/g,'\\"')+'")');shard.style.setProperty('--shard-delay',(i*55)+'ms');shards.appendChild(shard)}
+    frame.appendChild(shards);frame.classList.add('is-split');card.classList.add('has-shards');
+  });
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;entry.target.classList.add('is-assembling');observer.unobserve(entry.target)}),{threshold:.22,rootMargin:'0px 0px -4%'});
+  cards.forEach(card=>{if(card.classList.contains('has-shards'))observer.observe(card)});
+})();
 onScroll();
