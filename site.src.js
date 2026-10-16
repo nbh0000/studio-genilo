@@ -46,7 +46,7 @@ const header=$('header'),menuBtn=$('menuBtn'),mobileMenu=$('mobileMenu');
 function closeMenu(){mobileMenu.classList.remove('open');menuBtn.textContent='☰';document.body.style.overflow=''}
 menuBtn.onclick=()=>{const open=!mobileMenu.classList.contains('open');mobileMenu.classList.toggle('open',open);menuBtn.textContent=open?'×':'☰';document.body.style.overflow=open?'hidden':''};
 mobileMenu.querySelectorAll('a').forEach(a=>a.onclick=closeMenu);
-document.querySelectorAll('#navLinks a').forEach(a=>a.classList.toggle('active',a.dataset.page===PAGE));
+document.querySelectorAll('#navLinks a,.tool-pill').forEach(a=>a.classList.toggle('active',a.dataset.page===PAGE));
 const pageIdx=PAGE_ORDER.indexOf(PAGE);document.querySelectorAll('#dots i').forEach((d,i)=>d.classList.toggle('on',i===pageIdx));
 let lastY=0;
 const themed=[...document.querySelectorAll('section[data-theme]')];const baseTheme=document.body.dataset.theme||'dark';

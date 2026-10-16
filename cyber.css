@@ -35,6 +35,7 @@ header.hide .pill{transform:translateY(-130%)}
 .links a{font-family:var(--font-sans);font-size:1.02rem;letter-spacing:.02em;padding:10px 16px;font-weight:600;color:rgba(240,240,248,.85)}
 .links a:after{left:16px;right:16px;bottom:5px}
 .chat-pill{height:48px;padding:0 22px 0 16px;font-size:.9rem}
+.tool-pill{height:48px;padding:0 20px;font-size:.8rem;border-color:rgba(210,76,255,.35)}
 .chat-pill:before{width:14px;height:14px}
 .menu-btn{width:48px;height:48px;font-size:1.3rem}
 @media(max-width:640px){.pill{height:64px;padding:0 10px 0 20px}.logo{font-size:1.1rem}.chat-pill,.menu-btn{height:42px}.menu-btn{width:42px}}
