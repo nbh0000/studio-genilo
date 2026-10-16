@@ -42,18 +42,18 @@
 <script src="cyber.js?v=20261016"></script>
 <header id="header"><div class="pill">
   <a class="logo" href="index.html"><span>Studio <em>Genilo</em></span><span class="dots" id="dots"><i></i><i></i><i></i><i></i></span></a>
-  <nav class="links" id="navLinks">
+  <nav class="links" id="navLinks" aria-label="주요 메뉴">
     <a href="portfolio.html" data-page="portfolio">제작 사례</a><a href="contact.html" data-page="contact">상담하기</a><a href="workspace.html" data-page="workspace">AI 작업실</a>
   </nav>
   <div class="hright">
     <a class="tool-pill" href="seochecker.html" data-page="seochecker"><span>SEO·AEO·GEO 체커</span></a>
     <a class="chat-pill" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a>
-    <button class="menu-btn" aria-label="메뉴 열기" id="menuBtn">☰</button>
+    <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu" id="menuBtn">☰</button>
   </div>
 </div></header>
-<div class="mobile-menu" id="mobileMenu">
+<nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴" aria-hidden="true" inert>
   <a href="portfolio.html"><span>01</span>제작 사례</a><a href="contact.html"><span>02</span>상담하기</a><a href="workspace.html"><span>03</span>AI 작업실</a><a href="seochecker.html"><span>04</span>SEO 체커</a>
-</div>
+</nav>
 <aside class="scroll-meter"><span class="rail"><span class="tick" id="tick"></span></span><span id="scrollPct">000%</span></aside>
 
 <main id="top">
@@ -67,7 +67,7 @@
     </div>
     <div class="contact-grid reveal">
       <aside class="contact-side card"><h3>Studio Genilo 상담 채널</h3><p>작업 범위를 확인한 뒤 진행 가능 일정과 최종 견적을 안내합니다. 상담은 카카오톡 채널에서 기록으로 남아 편리하게 이어갈 수 있습니다.</p><a class="btn kakao-btn" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer">카카오톡 채널 상담하기</a><div class="contact-buttons"><a class="btn primary" href="tel:01086039867">전화 상담</a><a class="btn outline" href="mailto:nbh3459@gmail.com">이메일 상담</a></div><p class="notice" style="margin-top:16px">전화 010-4819-3459<br>이메일 nbh3459@gmail.com</p></aside>
-      <form class="form card" id="contactForm"><h3 style="margin-top:0">상담 내용 정리</h3><p class="notice">작성 후 카카오톡 상담 버튼을 누르면 내용이 복사되고 채널이 열립니다. 채팅창에 붙여넣어 전송하면 됩니다.</p><div class="form-grid"><div class="field"><label for="company">업체명 / 이름 <span class="notice">(선택)</span></label><input id="company" type="text" placeholder="예: 우리상회 / 홍길동"></div><div class="field"><label for="phone">연락처 <span style="color:var(--red)">*</span></label><input id="phone" type="text" placeholder="연락 가능한 번호를 입력하세요"></div><div class="field"><label for="interest">관심 상품</label><select id="interest"><option>상담 전 선택</option><option>실속형</option><option>기본형</option><option>프리미엄형</option></select></div><div class="field full"><label for="message">문의 내용 <span style="color:var(--red)">*</span></label><textarea id="message" rows="5" placeholder="업종, 필요한 페이지 또는 기능, 원하는 공개 시점 등을 적어 주세요."></textarea></div><div class="field full"><label class="privacy"><input type="checkbox" id="privacy"> 개인정보 수집 및 상담 목적의 이용에 동의합니다. <span style="color:var(--red)">*</span></label></div></div><div class="form-actions"><button class="btn kakao-btn" type="button" id="kakaoInquiry">카카오톡으로 상담하기</button><button class="btn outline" type="reset">내용 지우기</button></div><div class="result" id="formResult" aria-live="polite"></div><div class="form-success" id="formSuccess">상담 내용을 복사하고 카카오톡 채널을 열었습니다. 채팅창에 붙여넣어 보내 주세요.</div></form>
+      <form class="form card" id="contactForm"><h3 style="margin-top:0">상담 내용 정리</h3><p class="notice">작성 후 카카오톡 상담 버튼을 누르면 내용이 복사되고 채널이 열립니다. 채팅창에 붙여넣어 전송하면 됩니다.</p><div class="form-grid"><div class="field"><label for="company">업체명 / 이름 <span class="notice">(선택)</span></label><input id="company" type="text" placeholder="예: 우리상회 / 홍길동"></div><div class="field"><label for="phone">연락처 <span style="color:var(--red)">*</span></label><input id="phone" type="text" placeholder="연락 가능한 번호를 입력하세요"></div><div class="field"><label for="interest">관심 상품</label><select id="interest"><option>상담 전 선택</option><option>실속형</option><option>기본형</option><option>프리미엄형</option><option>SEO 점수 개선 · 299,000원</option><option>SEO·AEO·GEO 점수 개선 · 990,000원</option></select></div><div class="field full"><label for="message">문의 내용 <span style="color:var(--red)">*</span></label><textarea id="message" rows="5" placeholder="업종, 필요한 페이지 또는 기능, 원하는 공개 시점 등을 적어 주세요."></textarea></div><div class="field full"><label class="privacy"><input type="checkbox" id="privacy"> 개인정보 수집 및 상담 목적의 이용에 동의합니다. <span style="color:var(--red)">*</span></label></div></div><div class="form-actions"><button class="btn kakao-btn" type="button" id="kakaoInquiry">카카오톡으로 상담하기</button><button class="btn outline" type="reset">내용 지우기</button></div><div class="result" id="formResult" aria-live="polite"></div><div class="form-success" id="formSuccess">상담 내용을 복사하고 카카오톡 채널을 열었습니다. 채팅창에 붙여넣어 보내 주세요.</div></form>
     </div>
   </div>
 </section>
@@ -86,13 +86,13 @@
 </main>
 
 <footer><div class="wrap">
-  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav"><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="workspace.html">AI 작업실</a><a href="seochecker.html">SEO 체커</a></nav></div>
+  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="workspace.html">AI 작업실</a><a href="seochecker.html">SEO 체커</a></nav></div>
   <div class="biz reveal"><span><i>상호</i>에이아이 스튜디오 제닐로</span><span><i>대표자</i>문지석</span><span><i>사업자등록번호</i>846-11-03049</span><span><i>전화</i>010-4819-3459</span><span><i>이메일</i>nbh3459@gmail.com</span><span><i>주소</i>서울특별시 마포구 만리재로6길 3-20 (공덕동)</span></div>
   <div class="copy reveal"><span>© Studio Genilo. All rights reserved.</span><span>STUDIO GENILO · WEB DESIGN</span></div>
 </div></footer>
 
 <div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
 <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle"><div class="preview-dialog"><div class="preview-top"><div class="preview-title" id="previewTitle">포트폴리오 미리보기</div><button class="preview-close" id="previewClose" type="button" aria-label="미리보기 닫기">×</button></div><img class="preview-image" id="previewImage" alt="포트폴리오 확대 이미지"></div></div>
-<script src="site.js?v=20261016"></script>
+<script src="site.js?v=20261016seo"></script>
 </body>
 </html>

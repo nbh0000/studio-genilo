@@ -29,6 +29,7 @@ window.SG_READY=new Promise(resolve=>{
   if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
   const h=document.createElement('div');h.className='holo';h.innerHTML='<i></i><s></s><b></b><em>SELECT</em>';
   const tail=document.createElement('div');tail.className='holo-tail';
+  h.setAttribute('aria-hidden','true');tail.setAttribute('aria-hidden','true');
   const mount=()=>document.body.append(tail,h);
   if(document.body)mount();else addEventListener('DOMContentLoaded',mount);
   let x=innerWidth/2,y=innerHeight/2,tx=x,ty=y,shown=false;const em=h.querySelector('em');

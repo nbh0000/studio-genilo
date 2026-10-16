@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="주소 하나로 네이버 SEO, 구글 SEO, AEO(답변엔진), GEO(생성형엔진) 준비 상태를 한 번에 점검하는 무료 체커. 총 67개 항목.">
+<meta name="description" content="주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 점수와 잘된 점, 우선 개선점을 133개 항목으로 확인하는 무료 체커.">
 <title>SEO·AEO·GEO 체커 | Studio Genilo</title>
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#08080b">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,25 +16,25 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Studio Genilo">
 <meta property="og:title" content="SEO·AEO·GEO 체커 | Studio Genilo">
-<meta property="og:description" content="주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 준비 상태를 한 번에 점검하는 무료 체커.">
+<meta property="og:description" content="네이버 SEO, 구글 SEO, AEO, GEO 점수와 잘된 점, 우선 개선점을 133개 항목으로 확인합니다.">
 <meta property="og:url" content="https://genilo.kr/seochecker.html">
 <meta property="og:image" content="https://genilo.kr/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SEO·AEO·GEO 체커 | Studio Genilo">
-<meta name="twitter:description" content="주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 준비 상태를 한 번에 점검하는 무료 체커.">
+<meta name="twitter:description" content="네이버 SEO, 구글 SEO, AEO, GEO 점수와 잘된 점, 우선 개선점을 133개 항목으로 확인합니다.">
 <meta name="twitter:image" content="https://genilo.kr/og-image.jpg">
 <link href="fonts.css" rel="stylesheet">
 <link href="site.css?v=20261016b" rel="stylesheet">
 <link href="cyber.css?v=20261016b" rel="stylesheet">
-<link href="seochecker.css?v=20261015a" rel="stylesheet">
+<link href="seochecker.css?v=20261016b" rel="stylesheet">
 <link rel="preconnect" href="https://api.genilo.kr">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Studio Genilo SEO·AEO·GEO 체커","url":"https://genilo.kr/seochecker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 준비 상태를 한 번에 점검하는 무료 도구.","provider":{"@type":"Organization","name":"Studio Genilo","url":"https://genilo.kr/"}}
+{"@context":"https://schema.org","@type":"WebApplication","name":"Studio Genilo SEO·AEO·GEO 체커","url":"https://genilo.kr/seochecker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"description":"주소 하나로 네이버 SEO, 구글 SEO, AEO, GEO 점수와 강점, 우선 개선점을 133개 항목으로 확인하는 무료 도구.","provider":{"@type":"Organization","name":"Studio Genilo","url":"https://genilo.kr/"}}
 </script>
 </head>
 <body data-theme="dark" data-page="seochecker">
@@ -41,32 +42,32 @@
 <div class="cursor" id="cursor"></div>
 <div class="scan"></div>
 <div class="hud"><i></i><i></i><i></i><i></i></div>
-<div class="boot" id="boot"><div class="boot-grid"></div><div class="boot-corners"><i></i><i></i><i></i><i></i></div>
+<div class="boot" id="boot" role="dialog" aria-modal="true" aria-label="Studio Genilo 시작 화면"><div class="boot-grid"></div><div class="boot-corners"><i></i><i></i><i></i><i></i></div>
 <div class="boot-inner"><div class="boot-mark"><i></i></div><div class="boot-logo">Studio <em>Genilo</em></div><div class="boot-status" id="bootStatus">INITIALIZING AI CORE</div><div class="boot-tag">당신의 상상을 현실로 <b>AI</b>로</div><div class="boot-bar"><i id="bootFill"></i><b id="bootDot"></b></div><div class="boot-pct" id="bootPct">000%</div><button class="boot-enter" id="bootEnter" type="button">ENTER STUDIO<small>READY</small></button></div>
 <div class="boot-log" id="bootLog"></div><div class="boot-ver">SG · BUILD 2026.09</div></div>
 <script src="cyber.js?v=20261016"></script>
 <header id="header"><div class="pill">
   <a class="logo" href="index.html"><span>Studio <em>Genilo</em></span><span class="dots" id="dots"><i></i><i></i><i></i><i></i></span></a>
-  <nav class="links" id="navLinks">
+  <nav class="links" id="navLinks" aria-label="주요 메뉴">
     <a href="portfolio.html" data-page="portfolio">제작 사례</a><a href="contact.html" data-page="contact">상담하기</a><a href="workspace.html" data-page="workspace">AI 작업실</a>
   </nav>
   <div class="hright">
     <a class="tool-pill" href="seochecker.html" data-page="seochecker"><span>SEO·AEO·GEO 체커</span></a>
     <a class="chat-pill" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a>
-    <button class="menu-btn" aria-label="메뉴 열기" id="menuBtn">☰</button>
+    <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu" id="menuBtn">☰</button>
   </div>
 </div></header>
-<div class="mobile-menu" id="mobileMenu">
+<nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴" aria-hidden="true" inert>
   <a href="portfolio.html"><span>01</span>제작 사례</a><a href="contact.html"><span>02</span>상담하기</a><a href="workspace.html"><span>03</span>AI 작업실</a><a href="seochecker.html"><span>04</span>SEO 체커</a>
-</div>
+</nav>
 <aside class="scroll-meter"><span class="rail"><span class="tick" id="tick"></span></span><span id="scrollPct">000%</span></aside>
 
 <main id="top">
 <section class="section checker" id="checker" data-ghost="CHECKER" data-theme="dark">
   <div class="wrap">
-    <div class="reveal center"><div class="eyebrow scramble">SEO · AEO · GEO CHECKER</div><h1 class="title">네이버·구글 SEO, AEO, GEO<br>주소 하나로 한 번에 점검<em>.</em></h1><p class="lead">공개된 HTML을 기준으로 네이버 SEO 18개, 구글 SEO 19개, AEO 15개, GEO 15개, 총 67개 항목을 확인합니다. 로그인 없이 무료로 이용할 수 있습니다.</p></div>
+    <div class="reveal center"><div class="eyebrow scramble">SEO · AEO · GEO CHECKER</div><h1 class="title">네이버·구글 SEO, AEO, GEO를 주소 하나로 한 번에 점검<em>.</em></h1><p class="lead">공개된 HTML·응답 헤더·robots.txt·사이트맵을 기준으로 총 133개 항목을 확인합니다. 네 영역의 점수와 함께 잘된 점, 먼저 고칠 점, 확인 근거와 개선 방법을 보여드립니다.</p></div>
     <form class="chk-form reveal" id="chkForm" novalidate>
-      <div class="chk-input"><span class="chk-prefix">URL</span><input id="chkUrl" type="text" inputmode="url" autocomplete="url" spellcheck="false" placeholder="example.com 또는 https://example.com/page" aria-label="점검할 주소"><button class="btn primary" type="submit" id="chkBtn">점검 시작</button></div>
+      <label class="visually-hidden" for="chkUrl">점검할 웹페이지 주소</label><div class="chk-input"><span class="chk-prefix" aria-hidden="true">URL</span><input id="chkUrl" name="url" type="url" inputmode="url" autocomplete="url" spellcheck="false" placeholder="example.com 또는 https://example.com/page…"><button class="btn primary" type="submit" id="chkBtn">점검 시작</button></div>
       <p class="notice chk-note">http(s)를 생략하면 https로 시도합니다. 한 번 점검하면 네 영역이 모두 분석됩니다. <span id="chkQuota"></span></p>
     </form>
 
@@ -78,25 +79,50 @@
         <li>robots.txt · sitemap.xml 확인</li>
         <li>llms.txt · AI 크롤러 정책 확인</li>
         <li>http/https · www 주소 통일 확인</li>
-        <li>67개 항목 평가</li>
+        <li>133개 항목 평가</li>
       </ol>
     </div>
     <div class="chk-error" id="chkError" hidden role="alert"></div>
 
     <div id="chkResult" hidden>
       <div class="chk-summary" id="chkSummary"></div>
-      <div class="chk-scores" id="chkScores"></div>
-      <div class="chk-filter">
-        <div class="seg" role="group" aria-label="항목 필터"><button type="button" data-filter="issues">개선할 항목만</button><button type="button" data-filter="all" class="on" id="chkAllBtn">전체 67항목</button></div>
-        <div class="legend"><span>통과</span><span class="w">주의</span><span class="f">개선필요</span></div>
+      <section class="chk-outcome" id="chkOutcome" aria-labelledby="chkOutcomeTitle"></section>
+      <div class="chk-categories" id="chkScores" aria-label="영역별 진단 요약"></div>
+      <section class="chk-quotes" aria-labelledby="chkQuoteTitle">
+        <div class="quote-intro">
+          <p>진단 결과 기반 기본 견적</p>
+          <h2 id="chkQuoteTitle">확인만 하지 않고, 실제 개선까지 맡길 수 있습니다.</h2>
+          <span>진단한 URL 1개 기준입니다. 표시 점수는 공개 응답을 기준으로 한 진단치이며, 개선 서비스는 이번 진단에서 확인된 주의·개선필요 항목을 실제로 수정하는 작업입니다.</span>
+        </div>
+        <div class="quote-options">
+          <article class="quote-card">
+            <div><span class="quote-tag">NAVER · GOOGLE</span><h3>SEO 점수 개선</h3><p><b id="quoteSeoCount">SEO 개선 대상 확인 중</b> · 검색엔진이 페이지를 수집하고 이해하는 기본 구조를 정리합니다.</p></div>
+            <ul><li>네이버·구글 SEO 우선 개선 항목 적용</li><li>제목·설명·canonical·색인·사이트맵·구조화 데이터 정리</li><li>수정 후 동일 기준 재점검 보고</li></ul>
+            <div class="quote-bottom"><strong><span>299,000</span>원</strong><a class="btn outline" href="contact.html?source=seo-checker&amp;plan=seo" data-consult-plan="seo">이 견적으로 상담</a></div>
+          </article>
+          <article class="quote-card featured">
+            <div><span class="quote-tag">SEO · AEO · GEO</span><h3>SEO·AEO·GEO 점수 개선</h3><p><b id="quoteAllCount">전체 개선 대상 확인 중</b> · 검색 노출 기반부터 AI 답변·인용 구조까지 함께 정리합니다.</p></div>
+            <ul><li>SEO 개선 전체와 AEO·GEO 우선 항목 적용</li><li>FAQ·직접 답변·출처·조직/저자 엔티티·AI 크롤러 정책 정리</li><li>수정 후 네 영역 133개 항목 재점검 보고</li></ul>
+            <div class="quote-bottom"><strong><span>990,000</span>원</strong><a class="btn primary" href="contact.html?source=seo-checker&amp;plan=full" data-consult-plan="full">통합 개선 상담</a></div>
+          </article>
+        </div>
+        <p class="quote-note">서버·CMS 접근 권한과 기존 콘텐츠 상태에 따라 작업 가능 범위를 먼저 확인합니다. 신규 페이지 제작, 대규모 원고 작성, 유료 외부 서비스 비용은 별도이며 검색 순위와 AI 인용은 보장하지 않습니다.</p>
+      </section>
+      <div class="chk-filter" aria-label="진단 항목 찾기">
+        <div class="seg" role="group" aria-label="상태 필터"><button type="button" data-filter="issues">개선점</button><button type="button" data-filter="good">잘된 점</button><button type="button" data-filter="all" class="on" id="chkAllBtn">전체 133항목</button></div>
+        <label class="chk-search"><span class="visually-hidden">진단 항목 검색</span><input type="search" id="chkSearch" name="check-search" autocomplete="off" placeholder="항목·근거·개선 방법 검색…"></label>
+        <label class="chk-select"><span class="visually-hidden">진단 영역 선택</span><select id="chkCategory"><option value="all">모든 영역</option></select></label>
+        <span class="chk-visible" id="chkVisible" aria-live="polite"></span>
       </div>
       <div id="chkSections"></div>
       <div class="chk-actions">
         <button class="btn outline" type="button" id="chkCopyLink">결과 링크 복사</button>
         <button class="btn outline" type="button" id="chkCopyText">요약 텍스트 복사</button>
-        <a class="btn primary" href="contact.html">진단 결과로 상담하기</a>
+        <button class="btn outline" type="button" id="chkDownloadCsv">CSV 받기</button>
+        <button class="btn outline" type="button" id="chkDownloadJson">JSON 받기</button>
+        <a class="btn primary" href="contact.html?source=seo-checker&amp;plan=full" id="chkConsult" data-consult-plan="full">통합 개선 상담하기</a>
         <span class="chk-copied" id="chkCopied" aria-live="polite"></span>
-        <p class="notice">점검은 공개된 HTML만 기준으로 합니다. 자바스크립트로 나중에 그려지는 내용은 반영되지 않을 수 있습니다. 점수는 Studio Genilo 자체 기준이며 실제 검색 순위를 보장하지 않습니다.</p>
+        <p class="notice">점검은 외부에서 읽을 수 있는 공개 응답을 기준으로 합니다. 네이버·구글·AI 크롤러 접근은 공식 문서를 우선 적용하고, AEO·GEO 콘텐츠 평가는 공개 신호를 바탕으로 한 진단용 휴리스틱입니다. 검색 순위나 AI 답변 인용을 보장하지 않습니다.</p>
       </div>
     </div>
   </div>
@@ -106,36 +132,38 @@
   <div class="wrap">
     <div class="reveal"><div class="eyebrow scramble">WHAT WE CHECK</div><h2 class="title">네 가지 영역을 한 번에<em>.</em></h2><p class="lead">검색엔진만이 아니라 ChatGPT, Perplexity, 구글 AI 개요 같은 답변·생성형 엔진이 사이트를 읽고 인용할 수 있는지까지 봅니다.</p></div>
     <div class="chk-about stagger">
-      <article class="card"><span class="tag">NAVER · GOOGLE SEO</span><h3>검색엔진 최적화</h3><p>제목·설명·h1, 모바일 대응, robots.txt와 sitemap, 네이버 Yeti·Googlebot 허용 여부, 구조화 데이터, 응답 속도와 페이지 용량처럼 검색 노출의 기본이 되는 37개 항목입니다.</p></article>
-      <article class="card"><span class="tag">AEO</span><h3>답변엔진 최적화</h3><p>FAQ 스키마, 질문형 제목, 도입부 요약, 목록·표 구조, 조직 정보와 연락처·주소 노출 등 AI가 질문에 답할 때 바로 가져다 쓸 수 있는 형태인지 15개 항목으로 확인합니다.</p></article>
-      <article class="card"><span class="tag">GEO</span><h3>생성형엔진 최적화</h3><p>GPTBot·ClaudeBot·PerplexityBot 허용, llms.txt, 조직 엔티티 정의, 시맨틱 랜드마크, 인용 가능한 사실과 외부 근거 링크 등 생성형 AI 검색에 대비한 15개 항목입니다.</p></article>
+      <article class="card"><span class="tag">NAVER · GOOGLE SEO</span><h3>검색엔진 최적화</h3><p>제목·설명·대표 주소, Yeti·Googlebot 접근, 사이트맵 포함 여부, 구조화 데이터 문법, 이미지·링크·응답 헤더·전송 성능까지 70개 항목을 확인합니다.</p></article>
+      <article class="card"><span class="tag">AEO</span><h3>답변엔진 최적화</h3><p>질문 바로 아래의 답변, FAQ 화면·스키마 일치, 핵심 요약, 출처, 작성자, 표와 폼의 의미처럼 답변으로 추출하기 좋은 구조인지 31개 항목으로 확인합니다.</p></article>
+      <article class="card"><span class="tag">GEO</span><h3>생성형엔진 최적화</h3><p>AI 검색용·학습용 크롤러 정책을 분리하고, 인용 대표 URL, 조직·저자 엔티티, 근거 링크, 구체적 사실, 선택 항목인 llms.txt까지 32개 항목으로 확인합니다.</p></article>
     </div>
   </div>
 </section>
 </main>
 
 <footer><div class="wrap">
-  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav"><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="workspace.html">AI 작업실</a><a href="seochecker.html">SEO 체커</a></nav></div>
+  <div class="foot-top reveal"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="portfolio.html">제작 사례</a><a href="contact.html">상담하기</a><a href="workspace.html">AI 작업실</a><a href="seochecker.html">SEO 체커</a></nav></div>
   <div class="biz reveal"><span><i>상호</i>에이아이 스튜디오 제닐로</span><span><i>대표자</i>문지석</span><span><i>사업자등록번호</i>846-11-03049</span><span><i>전화</i>010-4819-3459</span><span><i>이메일</i>nbh3459@gmail.com</span><span><i>주소</i>서울특별시 마포구 만리재로6길 3-20 (공덕동)</span></div>
   <div class="copy reveal"><span>© Studio Genilo. All rights reserved.</span><span>STUDIO GENILO · WEB DESIGN</span></div>
 </div></footer>
 
 <div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
 <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle"><div class="preview-dialog"><div class="preview-top"><div class="preview-title" id="previewTitle">포트폴리오 미리보기</div><button class="preview-close" id="previewClose" type="button" aria-label="미리보기 닫기">×</button></div><img class="preview-image" id="previewImage" alt="포트폴리오 확대 이미지"></div></div>
-<script src="site.js?v=20261016"></script>
+<script src="site.js?v=20261016seo"></script>
 <script>
 (function(){
   const API=(location.hostname==='localhost'||location.hostname==='127.0.0.1')?'http://127.0.0.1:8787':'https://api.genilo.kr';
   const $=id=>document.getElementById(id);
   const form=$('chkForm'),input=$('chkUrl'),btn=$('chkBtn'),quota=$('chkQuota');
   const progress=$('chkProgress'),stages=[...$('chkStages').children],progressUrl=$('chkProgressUrl');
-  const errorBox=$('chkError'),result=$('chkResult');
-  const STATUS={pass:'통과',warn:'주의',fail:'개선필요'};
+  const errorBox=$('chkError'),result=$('chkResult'),searchInput=$('chkSearch'),categorySelect=$('chkCategory');
+  const STATUS={pass:'잘됨',warn:'주의',fail:'개선필요'};
   const CAT_ORDER=['naver','google','aeo','geo'];
-  let current=null,filter='all',stageTimer=null,running=false;
+  const params=new URLSearchParams(location.search);
+  let current=null,filter=['all','issues','good'].includes(params.get('view'))?params.get('view'):'all';
+  let categoryFilter=params.get('cat')||'all',stageTimer=null,running=false;
 
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const tone=score=>score>=75?'s-good':score>=60?'s-mid':'s-low';
+  const number=new Intl.NumberFormat('ko-KR');
   const fmtMs=ms=>(ms/1000).toFixed(2)+'초';
   const fmtKb=b=>b>=1024*1024?(b/1024/1024).toFixed(1)+'MB':Math.max(1,Math.round(b/1024))+'KB';
 
@@ -150,43 +178,65 @@
   }
   function showError(msg){errorBox.innerHTML='<b>점검하지 못했습니다</b>'+esc(msg);errorBox.hidden=false}
   function setQuota(q){if(!q||q.remaining==null){quota.textContent='';return}quota.textContent='오늘 남은 점검 '+q.remaining+'회 / '+q.limit+'회';}
+  function issuePriority(it){return(it.status==='fail'?20:it.status==='warn'?10:0)+(it.weight||0)}
+  function sortedIssues(items){return items.filter(it=>it.status!=='pass').sort((a,b)=>issuePriority(b)-issuePriority(a))}
+  function top(items,status,count=3){return items.filter(it=>it.status===status).sort((a,b)=>(b.weight||0)-(a.weight||0)).slice(0,count)}
+  function list(items,empty){return items.length?'<ul>'+items.map(it=>'<li>'+esc(it.label)+'</li>').join('')+'</ul>':'<p class="empty">'+esc(empty)+'</p>'}
 
   function render(data){
     current=data;
-    const s=data.summary,o=data.overall;
+    data.categories.sort((a,b)=>CAT_ORDER.indexOf(a.key)-CAT_ORDER.indexOf(b.key));
+    const s=data.summary;
     $('chkSummary').innerHTML=
       '<div class="cell"><i>점검 대상</i><b>'+esc(s.finalUrl)+'</b><small>'+esc(s.title)+'</small></div>'+
       '<div class="cell"><i>응답 코드</i><b>'+esc(s.status)+'</b><small>'+(s.redirects?'리다이렉트 '+s.redirects+'회':'직접 응답')+'</small></div>'+
       '<div class="cell"><i>응답 시간</i><b>'+fmtMs(s.responseMs)+'</b><small>HTML 수신 완료 기준</small></div>'+
       '<div class="cell"><i>HTML 용량</i><b>'+fmtKb(s.htmlBytes)+(s.truncated?'+':'')+'</b><small>'+esc((s.charset||'utf-8').toUpperCase())+'</small></div>';
-    const counts=data.categories.reduce((a,c)=>{a.warn+=c.counts.warn;a.fail+=c.counts.fail;return a},{warn:0,fail:0});
-    const overallHtml='<div class="card chk-overall '+tone(o.score)+'"><div class="ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52"/></svg><b>'+o.score+'</b></div><div><div class="label">종합 점수</div><div class="grade">'+esc(o.grade)+'</div><p>'+data.totalItems+'개 항목 중 개선필요 '+counts.fail+' · 주의 '+counts.warn+'</p></div></div>';
-    const cards=data.categories.map(c=>'<button type="button" class="card chk-cat '+tone(c.score)+'" data-go="sec-'+c.key+'"><div class="label">'+esc(c.label)+'</div><div class="score">'+c.score+'<small>/100</small></div><div class="grade">'+esc(c.grade)+'</div><div class="counts"><span>통과 '+c.counts.pass+'</span><span class="w">주의 '+c.counts.warn+'</span><span class="f">개선필요 '+c.counts.fail+'</span></div><div class="meter"><i data-w="'+c.score+'"></i></div></button>').join('');
-    $('chkScores').innerHTML=overallHtml+cards;
+    const counts=data.overall.counts||data.categories.reduce((a,c)=>{a.pass+=c.counts.pass;a.warn+=c.counts.warn;a.fail+=c.counts.fail;return a},{pass:0,warn:0,fail:0});
+    const priorities=(data.overall.topImprovements||data.categories.flatMap(c=>c.items.map(it=>({...it,category:c.label,categoryKey:c.key})))).slice(0,5);
+    $('chkOutcome').innerHTML='<div class="outcome-copy"><p>이번 진단에서 확인한 내용</p><h2 id="chkOutcomeTitle">먼저 고칠 점 '+number.format(counts.fail)+'개, 살펴볼 점 '+number.format(counts.warn)+'개</h2><div class="outcome-counts"><span class="good">잘된 점 <b>'+number.format(counts.pass)+'</b></span><span class="warn">주의 <b>'+number.format(counts.warn)+'</b></span><span class="bad">개선필요 <b>'+number.format(counts.fail)+'</b></span></div><p class="outcome-help">아래 우선 항목부터 처리하면 검색엔진과 AI가 페이지를 읽고 이해하는 기반을 빠르게 정리할 수 있습니다.</p></div><div class="outcome-priority"><h3>가장 먼저 확인할 항목</h3>'+(priorities.length?'<ol>'+priorities.map(it=>'<li><button type="button" data-check="check-'+esc(it.id)+'"><span>'+esc(it.category)+'</span><b>'+esc(it.label)+'</b></button></li>').join('')+'</ol>':'<p>즉시 고칠 항목이 없습니다. 잘된 점을 유지하면서 주의 항목을 확인해 주세요.</p>')+'</div>';
+    $('chkScores').innerHTML=data.categories.map(c=>{
+      const good=top(c.items,'pass',1)[0],bad=sortedIssues(c.items)[0];
+      return '<button type="button" class="card chk-cat" data-go="sec-'+c.key+'"><div class="cat-head"><span class="label">'+esc(c.label)+'</span><span>'+c.items.length+'항목</span></div><div class="cat-score"><b>'+number.format(c.score)+'</b><span>/ 100 · '+esc(c.grade)+'</span></div><strong>'+esc(c.assessment||(c.counts.fail?'먼저 고칠 항목 '+c.counts.fail+'개':c.counts.warn?'다듬을 항목 '+c.counts.warn+'개':'핵심 기준 충족'))+'</strong><div class="counts"><span>잘됨 '+c.counts.pass+'</span><span class="w">주의 '+c.counts.warn+'</span><span class="f">개선필요 '+c.counts.fail+'</span></div><div class="cat-signal good"><span>잘된 점</span><b>'+esc(good?good.label:'확인된 강점 없음')+'</b></div><div class="cat-signal issue"><span>우선 개선</span><b>'+esc(bad?bad.label:'즉시 고칠 항목 없음')+'</b></div></button>';
+    }).join('');
+    const seoIssues=data.categories.filter(c=>c.key==='naver'||c.key==='google').reduce((sum,c)=>sum+c.counts.warn+c.counts.fail,0);
+    const allIssues=counts.warn+counts.fail;
+    $('quoteSeoCount').textContent='현재 SEO 개선 대상 '+number.format(seoIssues)+'개';
+    $('quoteAllCount').textContent='현재 전체 개선 대상 '+number.format(allIssues)+'개';
+    categorySelect.innerHTML='<option value="all">모든 영역</option>'+data.categories.map(c=>'<option value="'+c.key+'">'+esc(c.label)+'</option>').join('');
+    if(!data.categories.some(c=>c.key===categoryFilter))categoryFilter='all';
+    categorySelect.value=categoryFilter;
     $('chkSections').innerHTML=data.categories.map(c=>
-      '<section class="chk-section" id="sec-'+c.key+'"><header><h2>'+esc(c.label)+'</h2><span class="sub">'+esc(c.sub)+' · '+c.items.length+'항목</span><span class="sc '+tone(c.score)+'"><span class="score">'+c.score+'</span></span></header><div class="chk-list">'+
-      c.items.map(it=>'<div class="chk-row" data-status="'+it.status+'"><span class="chip '+it.status+'">'+STATUS[it.status]+'</span><div><b>'+esc(it.label)+'</b><div class="detail">'+esc(it.detail)+'</div>'+(it.fix?'<div class="fix">'+esc(it.fix)+'</div>':'')+'</div></div>').join('')+
-      '<div class="chk-empty" hidden>이 영역은 개선할 항목이 없습니다.</div></div></section>').join('');
+      '<section class="chk-section" id="sec-'+c.key+'" data-category="'+c.key+'"><header><div><h2>'+esc(c.label)+'</h2><span class="sub">'+esc(c.sub)+' · '+c.items.length+'항목</span></div><div class="section-counts"><span>잘됨 '+c.counts.pass+'</span><span>주의 '+c.counts.warn+'</span><span>개선필요 '+c.counts.fail+'</span></div></header><div class="chk-brief"><section class="good"><h3>잘된 점</h3>'+list(top(c.items,'pass'), '아직 뚜렷한 강점을 찾지 못했습니다.')+'</section><section class="issue"><h3>우선 개선점</h3>'+list(sortedIssues(c.items).slice(0,3), '즉시 개선할 항목이 없습니다.')+'</section></div><div class="chk-list">'+
+      c.items.map(it=>'<article class="chk-row" id="check-'+esc(it.id)+'" data-status="'+it.status+'" data-category="'+c.key+'" data-search="'+esc((it.label+' '+it.detail+' '+(it.fix||'')).toLowerCase())+'"><span class="chip '+it.status+'">'+STATUS[it.status]+'</span><div class="row-copy"><h3>'+esc(it.label)+'</h3><div class="detail"><span>확인 근거</span>'+esc(it.detail)+'</div>'+(it.fix?'<div class="fix"><span>개선 방법</span>'+esc(it.fix)+'</div>':'')+'</div></article>').join('')+
+      '<div class="chk-empty" hidden>현재 조건에 맞는 항목이 없습니다. 검색어나 필터를 바꿔 보세요.</div></div></section>').join('');
     $('chkAllBtn').textContent='전체 '+data.totalItems+'항목';
     result.hidden=false;
-    applyFilter();
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{
-      const ring=result.querySelector('.ring .val');if(ring)ring.style.strokeDashoffset=String(326-326*o.score/100);
-      result.querySelectorAll('.meter i').forEach(i=>i.style.width=i.dataset.w+'%');
-    }));
+    searchInput.value=params.get('q')||'';
+    applyFilter(false);
     result.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{const t=$(b.dataset.go);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+    result.querySelectorAll('[data-check]').forEach(b=>b.addEventListener('click',()=>{filter='all';categoryFilter='all';searchInput.value='';categorySelect.value='all';applyFilter();const t=$(b.dataset.check);if(t){t.scrollIntoView({behavior:'smooth',block:'center'});t.classList.add('pulse');setTimeout(()=>t.classList.remove('pulse'),1400)}}));
     $('chkSummary').scrollIntoView({behavior:'smooth',block:'start'});
   }
 
-  function applyFilter(){
-    document.querySelectorAll('.chk-filter .seg button').forEach(b=>b.classList.toggle('on',b.dataset.filter===filter));
+  function applyFilter(sync=true){
+    const term=searchInput.value.trim().toLowerCase();
+    let totalVisible=0;
+    document.querySelectorAll('.chk-filter .seg button').forEach(b=>{const on=b.dataset.filter===filter;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on))});
     document.querySelectorAll('.chk-section').forEach(sec=>{
       let visible=0;
-      sec.querySelectorAll('.chk-row').forEach(row=>{const hide=filter==='issues'&&row.dataset.status==='pass';row.classList.toggle('hide',hide);if(!hide)visible++});
+      const categoryMatch=categoryFilter==='all'||sec.dataset.category===categoryFilter;
+      sec.querySelectorAll('.chk-row').forEach(row=>{const statusMatch=filter==='all'||(filter==='issues'&&row.dataset.status!=='pass')||(filter==='good'&&row.dataset.status==='pass');const searchMatch=!term||row.dataset.search.includes(term);const hide=!categoryMatch||!statusMatch||!searchMatch;row.classList.toggle('hide',hide);if(!hide)visible++});
       sec.querySelector('.chk-empty').hidden=visible>0;
+      sec.hidden=!categoryMatch;
+      totalVisible+=visible;
     });
+    $('chkVisible').textContent=number.format(totalVisible)+'개 표시 중';
+    if(sync){const q=new URL(location.href);filter==='all'?q.searchParams.delete('view'):q.searchParams.set('view',filter);categoryFilter==='all'?q.searchParams.delete('cat'):q.searchParams.set('cat',categoryFilter);term?q.searchParams.set('q',term):q.searchParams.delete('q');history.replaceState(null,'',q)}
   }
   document.querySelectorAll('.chk-filter .seg button').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;applyFilter()}));
+  searchInput.addEventListener('input',()=>applyFilter());
+  categorySelect.addEventListener('change',()=>{categoryFilter=categorySelect.value;applyFilter()});
 
   async function run(url){
     if(running)return;
@@ -214,13 +264,22 @@
   function flash(msg){const el=$('chkCopied');el.textContent=msg;clearTimeout(flash.t);flash.t=setTimeout(()=>el.textContent='',2400)}
   async function copy(text,msg){try{await navigator.clipboard.writeText(text);flash(msg)}catch{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');flash(msg)}catch{flash('복사하지 못했습니다')}ta.remove()}}
   $('chkCopyLink').addEventListener('click',()=>{if(!current)return;copy(location.href,'결과 링크를 복사했습니다')});
-  $('chkCopyText').addEventListener('click',()=>{
-    if(!current)return;
-    const d=current,lines=['[Studio Genilo SEO·AEO·GEO 점검] '+d.summary.finalUrl,'종합 '+d.overall.score+'점 ('+d.overall.grade+') · '+d.categories.map(c=>c.label+' '+c.score).join(' · '),''];
-    d.categories.forEach(c=>{const bad=c.items.filter(i=>i.status!=='pass');if(!bad.length)return;lines.push('■ '+c.label);bad.forEach(i=>lines.push('- ['+STATUS[i.status]+'] '+i.label+': '+i.detail));lines.push('')});
-    lines.push(location.href);
-    copy(lines.join('\n'),'요약 텍스트를 복사했습니다');
-  });
+  function reportText(limit=6){
+    if(!current)return'';
+    const d=current,counts=d.overall.counts||d.categories.reduce((a,c)=>{a.pass+=c.counts.pass;a.warn+=c.counts.warn;a.fail+=c.counts.fail;return a},{pass:0,warn:0,fail:0});
+    const lines=['[Studio Genilo SEO·AEO·GEO 진단]','사이트: '+d.summary.finalUrl,'종합 진단 '+d.overall.score+'점 · 잘된 점 '+counts.pass+' · 주의 '+counts.warn+' · 개선필요 '+counts.fail,''];
+    d.categories.forEach(c=>{lines.push('■ '+c.label+' '+c.score+'점 ('+c.grade+')');const good=top(c.items,'pass',3),bad=sortedIssues(c.items).slice(0,limit);lines.push('잘된 점: '+(good.length?good.map(i=>i.label).join(', '):'확인된 항목 없음'));if(bad.length){lines.push('우선 개선:');bad.forEach(i=>lines.push('- ['+STATUS[i.status]+'] '+i.label+' — '+(i.fix||i.detail)))}else lines.push('우선 개선: 즉시 고칠 항목 없음');lines.push('')});
+    lines.push('진단 링크: '+location.href);return lines.join('\n');
+  }
+  $('chkCopyText').addEventListener('click',()=>{if(current)copy(reportText(),'진단 요약을 복사했습니다')});
+  function exportData(){
+    const d=current;return{ok:d.ok,checkedAt:d.checkedAt,summary:d.summary,totalItems:d.totalItems,overall:{score:d.overall.score,grade:d.overall.grade,counts:d.overall.counts},categories:d.categories.map(c=>({key:c.key,label:c.label,sub:c.sub,score:c.score,grade:c.grade,assessment:c.assessment,counts:c.counts,items:c.items.map(({id,label,status,detail,fix})=>({id,label,status,detail,fix}))}))};
+  }
+  function download(content,type,extension){const blob=new Blob([content],{type});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='genilo-audit-'+(current.summary.host||'site')+'.'+extension;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),0)}
+  $('chkDownloadJson').addEventListener('click',()=>{if(current)download(JSON.stringify(exportData(),null,2),'application/json;charset=utf-8','json')});
+  $('chkDownloadCsv').addEventListener('click',()=>{if(!current)return;const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';const rows=[['영역','상태','항목','확인 근거','개선 방법'],...current.categories.flatMap(c=>c.items.map(it=>[c.label,STATUS[it.status],it.label,it.detail,it.fix||'']))];download('\ufeff'+rows.map(row=>row.map(quote).join(',')).join('\r\n'),'text/csv;charset=utf-8','csv')});
+  const CONSULT_PLANS={seo:'SEO 점수 개선 · 299,000원',full:'SEO·AEO·GEO 점수 개선 · 990,000원'};
+  document.querySelectorAll('[data-consult-plan]').forEach(link=>link.addEventListener('click',()=>{if(!current)return;try{const plan=CONSULT_PLANS[link.dataset.consultPlan]||CONSULT_PLANS.full;sessionStorage.setItem('genilo_seo_consult',JSON.stringify({url:current.summary.finalUrl,checkedAt:current.checkedAt,plan,report:reportText(4)}))}catch{}}));
 
   const preset=new URLSearchParams(location.search).get('u');
   if(preset){input.value=preset;(window.SG_READY||Promise.resolve()).then(()=>run(preset))}
