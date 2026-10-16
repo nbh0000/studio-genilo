@@ -291,9 +291,6 @@ footer{position:relative;z-index:1;padding:80px 0 120px;border-top:1px solid var
 .copy{font-family:var(--font-mono);margin-top:34px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
 /* index: answer-ready content */
-.page-index{z-index:3;margin-top:-30px;padding:10px;display:flex;justify-content:center;gap:4px;border:1px solid var(--line);border-radius:999px;background:rgba(20,20,22,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-.page-index a{padding:9px 15px;border-radius:999px;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;color:rgba(240,240,248,.7);transition:color .25s,background .25s}
-.page-index a:hover,.page-index a:focus-visible{color:var(--fg);background:var(--ghost);outline:none}
 .answer-guide{padding-top:70px!important}
 .answer-layout{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(34px,6vw,86px);align-items:start}
 .answer-summary{position:sticky;top:110px}
@@ -414,7 +411,7 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
   .grid3,.portfolio-grid,.plan-grid,.maintenance-grid,.contact-cards{grid-template-columns:1fr 1fr}
   .simple-estimate,.contact-grid,.info-grid{grid-template-columns:1fr}
   .scroll-meter{display:none}
-  .answer-layout{grid-template-columns:1fr}.answer-summary{position:static}.page-index{justify-content:flex-start;overflow-x:auto;scrollbar-width:none}.page-index::-webkit-scrollbar{display:none}.page-index a{flex:none}
+  .answer-layout{grid-template-columns:1fr}.answer-summary{position:static}
 }
 @media (max-width:640px){
   .wrap{width:calc(100% - 32px)}
@@ -429,7 +426,7 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
   .kakao-inline .btn{width:100%}
   .contact-buttons{flex-direction:column}
   .marquee{transform:rotate(-4deg) scale(1.12)}
-  .page-index{width:calc(100% - 24px);margin-top:-18px}.answer-summary>ul{grid-template-columns:1fr}.answer-faq article{padding-left:46px}.answer-faq article:before{left:2px}
+  .answer-summary>ul{grid-template-columns:1fr}.answer-faq article{padding-left:46px}.answer-faq article:before{left:2px}
 }
 @media (prefers-reduced-motion:reduce){
   .reveal,.stagger>*{opacity:1;transform:none;transition:none}
