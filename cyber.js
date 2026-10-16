@@ -68,7 +68,7 @@ window.SG_READY=new Promise(resolve=>{
 (function init(){
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);return}
   if(matchMedia('(prefers-reduced-motion:reduce)').matches||!matchMedia('(hover:hover)').matches)return;
-  const targets=[document.getElementById('heroTitle'),document.querySelector('.hero-tagline')].filter(Boolean);
+  const targets=[document.getElementById('heroTitle'),document.querySelector('.hero-tagline'),document.getElementById('aboutTitle')].filter(Boolean);
   targets.forEach(el=>{
     const walk=n=>{[...n.childNodes].forEach(c=>{
       if(c.nodeType===3){const f=document.createDocumentFragment();for(const ch of c.textContent){const s=document.createElement('span');s.className='ch';s.textContent=ch;f.appendChild(s)}c.replaceWith(f)}
@@ -80,4 +80,16 @@ window.SG_READY=new Promise(resolve=>{
     el.addEventListener('pointermove',e=>{const t=e.target.closest('.ch');set(t?chars.indexOf(t):-1)});
     el.addEventListener('pointerleave',()=>set(-1));
   });
+})();
+
+/* ===== ABOUT 숫자 카운트업 ===== */
+(function init(){
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);return}
+  const els=[...document.querySelectorAll('.count[data-to]')];if(!els.length)return;
+  const fmt=(n,f)=>f==='won'?n.toLocaleString('ko-KR'):String(n);
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const run=el=>{const to=+el.dataset.to,f=el.dataset.fmt;if(reduce){el.textContent=fmt(to,f);return}
+    const start=performance.now(),dur=1400;(function frame(now){const t=Math.min(1,(now-start)/dur),e=1-Math.pow(1-t,3);el.textContent=fmt(Math.round(to*e),f);if(t<1)requestAnimationFrame(frame)})(start)};
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){run(e.target);io.unobserve(e.target)}}),{threshold:.4});
+  els.forEach(el=>io.observe(el));
 })();

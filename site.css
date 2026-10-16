@@ -124,13 +124,6 @@ header.hide .pill{transform:translateY(-120%);opacity:0}
 .icon{width:46px;height:46px;border-radius:12px;border:1px solid var(--line-strong);display:grid;place-items:center;font-size:1.05rem;font-weight:700;color:var(--accent);background:var(--ghost);transition:transform .5s var(--ease-out),background .3s,color .3s}
 .card:hover .icon{transform:rotate(-8deg) scale(1.08);background:var(--accent);color:#fff;border-color:var(--accent)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.about{padding-top:60px}.about .lead{max-width:760px;margin-top:4px}
-.about-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
-.about-grid h3{margin:0 0 12px;font-size:1.02rem;letter-spacing:-.02em}.about-grid p{font-size:.88rem;line-height:1.65}
-.about-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:28px 0 0;padding:0}
-.about-facts div{padding:18px 22px;border:1px solid var(--line);border-radius:14px}
-.about-facts dt{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.about-facts dd{margin:8px 0 0;font-size:1.5rem;font-weight:700;letter-spacing:-.03em}
 
 /* portfolio */
 .portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:44px}
@@ -313,7 +306,7 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
 }
 @media (max-width:900px){
   .section{padding:90px 0}.section+.section{padding-top:24px}
-  .grid3,.portfolio-grid,.plan-grid,.maintenance-grid,.contact-cards,.about-grid,.about-facts{grid-template-columns:1fr 1fr}
+  .grid3,.portfolio-grid,.plan-grid,.maintenance-grid,.contact-cards{grid-template-columns:1fr 1fr}
   .simple-estimate,.contact-grid,.info-grid{grid-template-columns:1fr}
   .scroll-meter{display:none}
 }
@@ -321,7 +314,7 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
   .wrap{width:calc(100% - 32px)}
   header{top:10px;padding:0 10px}.pill{height:56px;padding:0 8px 0 18px}
   .chat-pill span{display:none}.chat-pill{padding:0 12px;gap:0}.tool-pill{display:none}
-  .grid3,.portfolio-grid,.plan-grid,.maintenance-grid,.contact-cards,.form-grid,.about-grid{grid-template-columns:1fr}
+  .grid3,.portfolio-grid,.plan-grid,.maintenance-grid,.contact-cards,.form-grid{grid-template-columns:1fr}
   .process{grid-template-columns:repeat(3,1fr)}
   .hero{padding-top:90px}.hero-actions .btn{width:100%}
   .globe-wrap{width:min(340px,86vw)}
