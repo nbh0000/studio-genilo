@@ -247,7 +247,7 @@ body.booting .hero h1 .word{animation-play-state:paused}
 
 /* ===== 홀로그램 커서 ===== */
 @media(hover:hover) and (pointer:fine){
-  body,a,button,label,select,summary,.card,.globe-wrap{cursor:none!important}
+  .has-holo :is(body,a,button,label,select,summary,.card,.globe-wrap){cursor:none!important}
   .holo{position:fixed;left:0;top:0;z-index:200;pointer-events:none;width:36px;height:36px;margin:-18px 0 0 -18px;mix-blend-mode:screen;transition:width .3s var(--ease-out),height .3s var(--ease-out),margin .3s var(--ease-out),opacity .3s;opacity:0}
   .holo.on{opacity:1}
   .holo i{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--neon);border-left-color:transparent;border-right-color:transparent;box-shadow:0 0 12px rgba(210,76,255,.6);animation:spinC 3s linear infinite}

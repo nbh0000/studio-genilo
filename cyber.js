@@ -27,6 +27,7 @@ window.SG_READY=new Promise(resolve=>{
 /* ===== 홀로그램 커서 ===== */
 (function(){
   if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  document.documentElement.classList.add('has-holo');
   const h=document.createElement('div');h.className='holo';h.innerHTML='<i></i><s></s><b></b><em>SELECT</em>';
   const tail=document.createElement('div');tail.className='holo-tail';
   h.setAttribute('aria-hidden','true');tail.setAttribute('aria-hidden','true');
