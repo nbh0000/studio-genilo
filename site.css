@@ -482,3 +482,13 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
 .studio .tag.br{right:22px;bottom:22px}
 .studio .caption{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:14px;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 @media(max-width:720px){.studio .frame{border-radius:14px}.studio .frame img{aspect-ratio:4/3}.studio .tag.br{display:none}.studio .caption{display:none}}
+/* 전화 연락처 노출 (2026-10-26) */
+.tel-pill{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;color:rgba(240,240,248,.9);white-space:nowrap;font-variant-numeric:tabular-nums;transition:background .3s,border-color .3s,transform .35s var(--ease-out)}
+.tel-pill span{font-size:.62rem;letter-spacing:.2em;color:var(--accent-2,#b36cff);opacity:.9}
+.tel-pill:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);color:#fff;transform:translateY(-2px)}
+@media (max-width:1300px){.tel-pill{display:none}}
+.mobile-menu a.tel{font-family:var(--font-mono);font-size:clamp(1.2rem,5.5vw,1.6rem);font-weight:600;letter-spacing:.02em}
+.hero-tel{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 6px;font-family:var(--font-mono);font-size:.92rem;letter-spacing:.08em;color:rgba(240,240,248,.85);font-variant-numeric:tabular-nums;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.hero-tel span{font-size:.62rem;letter-spacing:.26em;color:var(--accent-2,#b36cff)}
+.hero-tel:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
+@media (max-width:640px){.hero-tel{width:100%;justify-content:center;height:44px}}
