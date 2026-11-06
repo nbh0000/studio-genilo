@@ -177,3 +177,6 @@ if(matchMedia('(hover:none)').matches)cursor.style.display='none';
   cards.forEach(card=>{if(card.classList.contains('has-shards'))observer.observe(card)});
 })();
 onScroll();
+
+/* 방문 유입 기록 */
+(()=>{const s=document.createElement("script");s.src="/visit.js?v=20261106";s.defer=true;document.head.appendChild(s)})();

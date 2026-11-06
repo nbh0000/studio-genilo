@@ -60,3 +60,6 @@ if(reducedMotion||!('IntersectionObserver' in window)){
   },{threshold:.08,rootMargin:'0px 0px -4%'});
   revealElements.forEach(element=>revealObserver.observe(element));
 }
+
+/* 방문 유입 기록 */
+(()=>{const s=document.createElement("script");s.src="/visit.js?v=20261106";s.defer=true;document.head.appendChild(s)})();

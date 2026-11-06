@@ -33,18 +33,53 @@
   <link rel="modulepreload" crossorigin href="/assets/preload-helper-BXl3LOEh.js">
   <link rel="modulepreload" crossorigin href="/assets/supabase-client-D8zR8z4z.js">
   <link rel="stylesheet" crossorigin href="/assets/admin-CUIsfOSp.css">
+<style>
+.tr-daily{display:flex;align-items:flex-end;gap:4px;height:180px;overflow-x:auto;padding-bottom:2px}
+.tr-day{flex:1 1 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0}
+#traffic>.card,#traffic .dashboard-grid>.card{min-width:0}
+.tr-day i{display:block;width:100%;max-width:28px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#765dff,#a993ff)}
+.tr-day b{font-size:10px;color:#555;margin-bottom:4px;font-weight:600}
+.tr-day span{font-size:10px;color:#999;margin-top:6px;white-space:nowrap}
+.tr-day:nth-child(n) span{visibility:hidden}.tr-daily:not(:has(.tr-day:nth-child(15))) .tr-day span,.tr-day:nth-last-child(7n+1) span{visibility:visible}
+#traffic td small{display:block}
+#traffic td a{color:inherit;text-decoration:underline;text-decoration-color:#c9c9d3;text-underline-offset:3px}
+#traffic td small a{color:#888}
+#traffic .tr-path{min-width:220px;color:#555}
+.tr-self{grid-column:1 / -1;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:#666;cursor:pointer;justify-self:start}
+.tr-self input{width:16px;height:16px;padding:0;margin:0;accent-color:#765dff}
+#traffic .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#traffic .model-sync-actions{align-items:center}
+#traffic .model-sync-actions label{display:block}
+#traffic .model-sync-actions select{min-height:38px;padding:0 30px 0 10px;width:auto;color:#22252b;color-scheme:light}
+#traffic .model-sync-actions .primary{margin-top:0;min-height:38px}
+#traffic th{white-space:nowrap}
+#traffic td{vertical-align:top}
+#traffic td:not(:first-child):not(.tr-path){white-space:nowrap}
+#traffic td small a{word-break:break-all}
+@media(max-width:760px){.tr-daily{height:140px;gap:2px}.tr-day b{display:none}.tr-day span{font-size:9px}}
+</style>
 </head>
 <body class="admin-locked">
   <noscript class="javascript-required">일부 로그인·제작·결제 기능에는 JavaScript가 필요합니다. 정적 안내와 도움말은 계속 확인할 수 있습니다.</noscript>
 <a class="skip-link" href="#mainContent">본문 바로가기</a>
 <div class="auth-gate" id="authGate"><form id="adminLogin"><img src="/genilo-logo.svg" alt="Genilo" width="292" height="64" decoding="async"><span class="admin-kicker">SECURE ADMIN CONSOLE</span><h1>관리자 로그인</h1><p>관리자 권한이 확인된 계정만 콘솔에 접근할 수 있습니다.</p><label><span>이메일</span><input id="adminEmail" type="email" autocomplete="username" inputmode="email" maxlength="254" placeholder="관리자 이메일" required></label><label><span>비밀번호</span><input id="adminPassword" type="password" autocomplete="current-password" minlength="8" maxlength="72" placeholder="비밀번호" required></label><button type="submit">안전하게 로그인</button><small id="loginMessage" role="status" aria-live="polite"></small><a href="index.html">← Genilo 홈으로</a></form></div>
-<aside><a class="logo" href="index.html" aria-label="Genilo 홈"><b aria-hidden="true">Z</b><span>Genilo ADMIN</span></a><nav aria-label="관리자 메뉴"><button type="button" class="active" data-tab="dashboard" aria-pressed="true">▦ <span>대시보드</span></button><button type="button" data-tab="growth" aria-pressed="false">↗ <span>성장 퍼널</span></button><button type="button" data-tab="users" aria-pressed="false">◎ <span>사용자</span></button><button type="button" data-tab="activity" aria-pressed="false">✦ <span>AI 사용 현황</span></button><button type="button" data-tab="models" aria-pressed="false">◇ <span>모델·랭킹</span></button><button type="button" data-tab="margins" aria-pressed="false">₩ <span>수익성</span></button><button type="button" data-tab="settings" aria-pressed="false">⚙ <span>서비스 설정</span></button></nav><div class="admin-user"><span id="adminIdentity">관리자</span><button type="button" id="logoutBtn">로그아웃</button></div><a class="back" href="index.html">← 사이트 보기</a></aside>
+<aside><a class="logo" href="index.html" aria-label="Genilo 홈"><b aria-hidden="true">Z</b><span>Genilo ADMIN</span></a><nav aria-label="관리자 메뉴"><button type="button" class="active" data-tab="dashboard" aria-pressed="true">▦ <span>대시보드</span></button><button type="button" data-tab="traffic" aria-pressed="false">⇢ <span>유입 분석</span></button><button type="button" data-tab="growth" aria-pressed="false">↗ <span>성장 퍼널</span></button><button type="button" data-tab="users" aria-pressed="false">◎ <span>사용자</span></button><button type="button" data-tab="activity" aria-pressed="false">✦ <span>AI 사용 현황</span></button><button type="button" data-tab="models" aria-pressed="false">◇ <span>모델·랭킹</span></button><button type="button" data-tab="margins" aria-pressed="false">₩ <span>수익성</span></button><button type="button" data-tab="settings" aria-pressed="false">⚙ <span>서비스 설정</span></button></nav><div class="admin-user"><span id="adminIdentity">관리자</span><button type="button" id="logoutBtn">로그아웃</button></div><a class="back" href="index.html">← 사이트 보기</a></aside>
 <main id="mainContent" tabindex="-1">
   <header><div><small>ADMIN CONSOLE</small><h2 id="pageTitle">대시보드</h2></div><div class="status"><i></i><span id="syncStatus">데이터 확인 중</span></div></header>
   <section id="dashboard" class="panel active">
     <div class="metric-grid"><article><span>전체 가입자</span><strong id="totalUsers">0</strong><small id="newUsersToday">오늘 +0명</small></article><article><span>오늘 매출</span><strong id="revenueToday">₩0</strong><small id="revenueMonth">이번 달 ₩0</small></article><article><span>오늘 생성</span><strong id="generationsToday">0</strong><small id="creditsUsedToday">0 크레딧 사용</small></article><article><span>미처리 문의</span><strong id="openContacts">0</strong><small>답변 대기</small></article></div>
     <div class="dashboard-grid"><article class="card"><h2>모델별 사용량</h2><div class="bars" id="modelUsage"></div></article><article class="card"><h2>제품별 매출</h2><div class="bars" id="productSales"></div></article></div>
     <article class="card"><h2>최근 생성 작업</h2><div class="table-wrap"><table><thead><tr><th>유형</th><th>모델</th><th>상태</th><th>크레딧</th><th>시간</th></tr></thead><tbody id="recentJobs"></tbody></table></div></article>
+  </section>
+  <section id="traffic" class="panel">
+    <article class="card growth-toolbar"><div><h2>방문 유입</h2><p class="help">genilo.kr 방문자가 어디서 들어와 어떤 페이지를 봤는지 보여 줍니다. 구글은 검색어를 넘겨주지 않아 키워드가 비어 있고, 구글 검색어는 Search Console에서 확인합니다.</p></div><div class="model-sync-actions"><label><span class="sr-only">유입 집계 기간</span><select id="trafficWindow"><option value="1">오늘</option><option value="7">최근 7일</option><option value="30" selected>최근 30일</option><option value="90">최근 90일</option></select></label><button class="primary" type="button" id="trafficReload">새로고침</button></div><p class="help" id="trafficStatus" role="status" aria-live="polite"></p><label class="tr-self"><input type="checkbox" id="trafficSelf"> 이 브라우저의 방문은 집계에서 빼기</label></article>
+    <div class="metric-grid" id="trafficSummary"></div>
+    <article class="card"><h2>일별 방문</h2><div class="tr-daily" id="trafficDaily"></div></article>
+    <div class="dashboard-grid"><article class="card"><h2>유입 경로</h2><div class="table-wrap"><table><thead><tr><th>어디서</th><th>방문</th><th>방문자</th><th>페이지뷰</th><th>평균 체류</th></tr></thead><tbody id="trafficChannels"></tbody></table></div></article><article class="card"><h2>검색 키워드</h2><div class="table-wrap"><table><thead><tr><th>키워드</th><th>검색엔진</th><th>방문</th><th>도착 페이지</th><th>최근</th></tr></thead><tbody id="trafficKeywords"></tbody></table></div></article></div>
+    <article class="card"><h2>어디서 와서 어느 페이지로</h2><div class="table-wrap"><table><thead><tr><th>어디서</th><th>처음 본 페이지</th><th>방문</th><th>방문당 페이지</th></tr></thead><tbody id="trafficFlows"></tbody></table></div></article>
+    <div class="dashboard-grid"><article class="card"><h2>들어온 사이트</h2><div class="table-wrap"><table><thead><tr><th>사이트</th><th>종류</th><th>방문</th><th>도착 페이지</th></tr></thead><tbody id="trafficReferrers"></tbody></table></div></article><article class="card"><h2>기기</h2><div class="bars" id="trafficDevices"></div></article></div>
+    <article class="card"><h2>페이지별 조회</h2><div class="table-wrap"><table><thead><tr><th>페이지</th><th>조회</th><th>방문자</th><th>첫 페이지로 들어옴</th><th>평균 체류</th></tr></thead><tbody id="trafficPages"></tbody></table></div></article>
+    <article class="card"><h2>최근 방문</h2><div class="table-wrap"><table><thead><tr><th>시간</th><th>어디서</th><th>키워드</th><th>본 페이지</th><th>페이지</th><th>체류</th><th>기기</th></tr></thead><tbody id="trafficRecent"></tbody></table></div></article>
   </section>
   <section id="growth" class="panel">
     <article class="card growth-toolbar"><div><h2>동의 기반 성장 퍼널</h2><p class="help">선택 분석에 동의한 방문의 방향성 표본입니다. 전체 방문자 수나 동의율로 해석하지 마세요. 문의 집계는 실제 접수 기록을 별도로 사용합니다.</p></div><div class="model-sync-actions"><label><span class="sr-only">성장 집계 기간</span><select id="growthWindow"><option value="7">최근 7일</option><option value="30" selected>최근 30일</option><option value="90">최근 90일</option></select></label><button class="primary" type="button" id="growthReload">다시 계산</button></div><p class="help" id="growthStatus" role="status" aria-live="polite"></p></article>
@@ -76,4 +111,5 @@
   <section id="settings" class="panel"><article class="card"><h2>서비스 설정</h2><div class="form-grid"><label>공지 문구<input id="promoInput" autocomplete="off" maxlength="200" spellcheck="true"></label><label>신규 가입 무료 크레딧<input id="signupCredits" type="number" value="800" inputmode="numeric" disabled aria-describedby="signupCreditHelp"><small id="signupCreditHelp">보안을 위해 DB 가입 트리거와 서버에서 800으로 고정됩니다.</small></label><label class="wide">운영 메모<textarea id="operationsNote" rows="6" maxlength="4000" spellcheck="true"></textarea></label></div><button type="button" class="primary" id="saveSettings">설정 저장</button><p class="help">설정은 브라우저가 아닌 Supabase에 저장됩니다.</p></article></section>
 </main>  <script src="/consent-manager.js" defer></script>
   <script src="/journey-runtime.js" type="module"></script>
+  <script src="/admin-traffic.js?v=20261106" type="module"></script>
 </body></html>
