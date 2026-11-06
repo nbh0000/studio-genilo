@@ -94,7 +94,7 @@ INDEX_HERO = """<section class="hero hero-x" id="hero">
       <div class="eyebrow scramble">AI STUDIO GENILO · WEB APP STUDIO</div>
       <h1 id="heroTitle">웹 · 앱 제작<br>Studio Genilo</h1>
       <div class="hero-tagline">TRANSFORMING <em>IDEAS</em> INTO <em>WORKING PRODUCTS</em></div>
-      <div class="hero-actions"><a class="btn primary" href="portfolio.html">제작 사례 보기</a><a class="btn outline" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer">카카오톡 무료 상담</a></div>
+      <div class="hero-actions"><a class="btn primary" href="portfolio.html">제작 사례 보기</a><a class="btn outline" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer">카카오톡 무료 상담</a></div>
     </div>
   </div>
   <div class="hero-tags"><span>AI ASSISTED BUILD</span><span>PLAN · DESIGN · DEPLOY</span><span>SEOUL · KOREA</span></div>
@@ -226,7 +226,7 @@ EXPERTS_HTML = """<section class="section" id="experts" data-theme="dark" data-g
 <script>
 (function(){
   const $=id=>document.getElementById(id);const form=$('expertForm');if(!form)return;
-  const startedAt=Date.now();const KAKAO='https://open.kakao.com/o/sACnsFNi';
+  const startedAt=Date.now();const KAKAO='https://pf.kakao.com/_MsZFX';
   function fields(){return [...document.querySelectorAll('.exField:checked')].map(i=>i.value)}
   function type(){const r=document.querySelector('input[name=exType]:checked');return r?r.value:''}
   function compose(){return ['[AI 전문가 지원]','이름: '+$('exName').value.trim(),'이메일: '+$('exEmail').value.trim(),'연락처: '+($('exPhone').value.trim()||'-'),'경력: '+$('exYears').value,'전문 분야: '+(fields().join(', ')||'-'),'협업 형태: '+type(),'링크: '+($('exLinks').value.trim()||'-'),'','소개:',$('exIntro').value.trim()].join('\\n')}

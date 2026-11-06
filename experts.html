@@ -48,7 +48,7 @@
   <div class="hright">
     <a class="tel-pill" href="tel:01048193459" aria-label="전화 상담 010-4819-3459"><span>TEL</span>010-4819-3459</a>
     <a class="tool-pill" href="seochecker.html" data-page="seochecker"><span>SEO·AEO·GEO 체커</span></a>
-    <a class="chat-pill" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a>
+    <a class="chat-pill" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a>
     <button class="menu-btn" aria-label="메뉴 열기" id="menuBtn">☰</button>
   </div>
 </div></header>
@@ -95,7 +95,7 @@
 <script>
 (function(){
   const $=id=>document.getElementById(id);const form=$('expertForm');if(!form)return;
-  const startedAt=Date.now();const KAKAO='https://open.kakao.com/o/sACnsFNi';
+  const startedAt=Date.now();const KAKAO='https://pf.kakao.com/_MsZFX';
   function fields(){return [...document.querySelectorAll('.exField:checked')].map(i=>i.value)}
   function type(){const r=document.querySelector('input[name=exType]:checked');return r?r.value:''}
   function compose(){return ['[AI 전문가 지원]','이름: '+$('exName').value.trim(),'이메일: '+$('exEmail').value.trim(),'연락처: '+($('exPhone').value.trim()||'-'),'경력: '+$('exYears').value,'전문 분야: '+(fields().join(', ')||'-'),'협업 형태: '+type(),'링크: '+($('exLinks').value.trim()||'-'),'','소개:',$('exIntro').value.trim()].join('\n')}
@@ -121,7 +121,7 @@
   <div class="copy reveal"><span>© Studio Genilo. All rights reserved.</span><span>STUDIO GENILO · WEB DESIGN</span></div>
 </div></footer>
 
-<div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://open.kakao.com/o/sACnsFNi" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
+<div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
 <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle"><div class="preview-dialog"><div class="preview-top"><div class="preview-title" id="previewTitle">포트폴리오 미리보기</div><button class="preview-close" id="previewClose" type="button" aria-label="미리보기 닫기">×</button></div><img class="preview-image" id="previewImage" alt="포트폴리오 확대 이미지"></div></div>
 <script src="site.js?v=20261016"></script>
 </body>

@@ -1,6 +1,6 @@
 /* ===== 공통 ===== */
 const $=id=>document.getElementById(id);
-const KAKAO_URL='https://open.kakao.com/o/sACnsFNi';
+const KAKAO_URL='https://pf.kakao.com/_MsZFX';
 const PAGE=document.body.dataset.page||'index';
 const PAGE_ORDER=['portfolio','pricing','process','contact'];
 
