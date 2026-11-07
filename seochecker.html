@@ -29,12 +29,12 @@
 <link href="fonts.css" rel="stylesheet">
 <link href="site.css?v=20261016e" rel="stylesheet">
 <link href="cyber.css?v=20261020" rel="stylesheet">
-<link href="seochecker.css?v=20261107" rel="stylesheet">
+<link href="seochecker.css?v=20261108-aeo" rel="stylesheet">
 <link rel="preconnect" href="https://api.genilo.kr">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://genilo.kr/seochecker.html#app","name":"Studio Genilo SEO·AEO·GEO 체커","url":"https://genilo.kr/seochecker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","name":"무료 기술 진단","price":"0","priceCurrency":"KRW"},"description":"공개 웹페이지의 네이버·구글 기술 SEO와 AI 검색 접근 조건을 무료로 점검하는 도구. 기술 점수와 콘텐츠 참고 진단을 구분하며, 상세 콘텐츠 개선 가이드 리포트는 건당 150,000원으로 별도 제공합니다.","provider":{"@type":"Organization","name":"Studio Genilo","url":"https://genilo.kr/"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://genilo.kr/seochecker.html#app","name":"Studio Genilo SEO·AEO·GEO 체커","url":"https://genilo.kr/seochecker.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","name":"무료 기술 진단","price":"0","priceCurrency":"KRW"},"description":"공개 웹페이지의 네이버·구글 기술 SEO와 AI 검색 접근 조건을 무료로 점검하는 도구. 기술 점수와 AEO 콘텐츠 진단 점수를 구분하며, 상세 콘텐츠 개선 가이드 리포트는 건당 150,000원으로 별도 제공합니다.","provider":{"@type":"Organization","name":"Studio Genilo","url":"https://genilo.kr/"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://genilo.kr/#website","url":"https://genilo.kr/","name":"제닐로","alternateName":["Studio Genilo","스튜디오 제닐로"],"inLanguage":"ko-KR"}</script>
 </head>
 <body data-theme="dark" data-page="seochecker">
@@ -95,7 +95,7 @@
       <section class="chk-quotes" aria-labelledby="chkQuoteTitle">
         <div class="quote-intro">
           <h2 id="chkQuoteTitle">SEO·AEO·GEO 개선 견적</h2>
-          <span>진단한 URL 1개 기준입니다. 점수는 기술 항목에만 적용하며, 콘텐츠 검토는 별도로 안내합니다. 개선 서비스는 확인된 문제와 페이지 목적에 맞춰 합의한 항목을 수정하는 작업입니다.</span>
+          <span>진단한 URL 1개 기준입니다. 기술 점수와 AEO 콘텐츠 진단 점수를 각각 표시하며, 상세 콘텐츠 개선안은 별도로 안내합니다. 개선 서비스는 확인된 문제와 페이지 목적에 맞춰 합의한 항목을 수정하는 작업입니다.</span>
         </div>
         <div class="quote-options">
           <article class="quote-card">
@@ -118,7 +118,7 @@
         <span class="chk-visible" id="chkVisible" aria-live="polite"></span>
         <button class="chk-toggle-all" type="button" id="chkToggleAll" aria-pressed="false">전체 펼치기</button>
       </div>
-      <aside class="checker-disclosure" role="note" aria-label="진단 결과 공개 범위"><b>공개 범위 안내</b><span>기술 점수와 공개 가능한 개선 항목을 표시합니다. AEO 콘텐츠 항목은 점수 없이 참고 진단으로 안내하며, 내부 배점과 일부 검사 신호는 공개하지 않습니다.</span></aside>
+      <aside class="checker-disclosure" role="note" aria-label="진단 결과 공개 범위"><b>공개 범위 안내</b><span>기술 점수, AEO 콘텐츠 진단 점수와 공개 가능한 개선 항목을 표시합니다. AEO는 확인 가능한 콘텐츠 구조를 평가한 제닐로 자체 점수입니다. 내부 배점과 일부 검사 신호는 공개하지 않습니다.</span></aside>
       <div id="chkSections"></div>
       <div class="chk-actions">
         <button class="btn outline" type="button" id="chkCopyLink">결과 링크 복사</button>
@@ -138,7 +138,7 @@
     <div class="reveal"><div class="eyebrow scramble">WHAT WE CHECK</div><h2 class="title">기술 조건과 콘텐츠를 함께 확인합니다<em>.</em></h2><p class="lead">네이버·구글과 AI 검색 크롤러의 접근 조건, 페이지에 드러난 정보를 확인합니다. 기술 점수와 콘텐츠 검토 내용을 구분해 무엇을 고칠지 판단할 수 있도록 돕습니다.</p></div>
     <div class="chk-about stagger">
       <article class="card"><span class="tag">NAVER · GOOGLE SEO</span><h3>검색엔진 최적화</h3><p>제목·설명·대표 주소, Yeti·Googlebot 접근, 사이트맵 표본, CDN·캐시, 구조화 데이터, 이미지·링크와 네트워크 전송 성능까지 공개 응답을 확인합니다.</p></article>
-      <article class="card"><span class="tag">AEO</span><h3>콘텐츠 참고 진단</h3><p>페이지 목적에 따라 필요한 설명, 출처와 운영 주체, 사용자가 행동할 수 있는 연결을 검토합니다. 모든 페이지에 FAQ·요약·표를 요구하거나 콘텐츠에 순위 점수를 매기지 않습니다.</p></article>
+      <article class="card"><span class="tag">AEO</span><h3>AEO 콘텐츠 진단</h3><p>본문 구분, 표·폼·컨트롤의 의미 있는 구조를 확인해 100점 만점으로 표시합니다. 출처와 운영 주체 등은 별도로 검토하며, 모든 페이지에 FAQ·요약·표를 요구하지 않습니다.</p></article>
       <article class="card"><span class="tag">GEO</span><h3>AI 검색 접근과 신뢰 정보</h3><p>AI 검색 크롤러의 접근 정책, 대표 URL, 업체·작성자 정보와 근거 링크를 확인합니다. 정보의 존재와 실제 신뢰성·인용 여부는 구분해서 판단해야 합니다.</p></article>
     </div>
   </div>
@@ -147,7 +147,7 @@
   <div class="wrap">
     <div class="seo-learning-head reveal">
       <h2 class="title" id="seoGuideTitle">기술 점수와 콘텐츠 진단을 읽는 기준<em>.</em></h2>
-      <p>기술 점수는 확인 가능한 기술 조건을 요약합니다. 콘텐츠 참고 진단은 페이지의 목적에 맞춰 검토할 내용을 제안합니다. 어느 쪽도 검색 서비스가 제공하는 순위 지표는 아닙니다.</p>
+      <p>기술 점수는 확인 가능한 기술 조건을 요약합니다. AEO 점수는 확인 가능한 콘텐츠 구조 항목의 충족도를 요약합니다. 상세 콘텐츠 검토는 페이지의 목적에 맞춰 개선할 내용을 제안합니다. 어느 쪽도 검색 서비스가 제공하는 순위 지표는 아닙니다.</p>
     </div>
     <div class="seo-learning-layout">
       <nav class="seo-learning-nav" aria-label="SEO 진단 가이드 목차">
@@ -157,7 +157,7 @@
         <article id="guide-seo-score">
           <h3>SEO 점수와 SEO 지수는 무엇을 뜻하나요?</h3>
           <p>이 체커의 점수는 공개 응답에서 확인한 접근 허용, 색인 지시, 대표 주소, 마크업 등 기술 항목의 상태를 환산한 값입니다. 본문 분량, 제목 개수, FAQ 유무 같은 형식은 점수에 반영하지 않습니다.</p>
-          <p>점수가 높아도 실제 색인이나 특정 검색어의 상단 노출을 확인한 것은 아닙니다. 수집·색인을 막는 문제가 있는지 먼저 보고, 콘텐츠 참고 진단은 페이지 목적과 방문자의 필요에 맞춰 검토하세요.</p>
+          <p>점수가 높아도 실제 색인이나 특정 검색어의 상단 노출을 확인한 것은 아닙니다. 수집·색인을 막는 문제가 있는지 먼저 보고, AEO 점수와 상세 콘텐츠 진단은 페이지 목적과 방문자의 필요에 맞춰 검토하세요.</p>
           <p><a href="seo-score.html">SEO 점수·지수 해설 전체 보기</a></p>
         </article>
         <article id="guide-seo-check">
@@ -186,7 +186,7 @@
         </article>
         <article id="guide-aeo-score">
           <h3>AEO 콘텐츠 진단은 어떻게 활용하나요?</h3>
-          <p>AEO 영역에는 점수를 매기지 않습니다. 검색한 사람이 필요한 정보를 찾을 수 있도록 페이지의 설명과 행동 연결을 검토하는 참고 진단입니다. 모든 페이지에 FAQ나 질문형 제목을 요구하지 않으며, 종료된 Google FAQ 리치 결과 항목은 제외했습니다.</p>
+          <p>AEO는 확인 가능한 콘텐츠 구조를 제닐로 자체 기준으로 평가해 100점 만점으로 표시합니다. 본문 구분과 해당 페이지에 존재하는 표·폼·컨트롤의 구조를 확인하며, 미확인·해당 없음 항목은 계산에서 제외합니다. 답변의 정확성이나 AI 인용 가능성을 측정한 점수는 아닙니다. FAQ 유무와 종료된 Google FAQ 리치 결과 항목은 점수에 반영하지 않습니다.</p>
           <p>비용을 찾는 사람에게는 실제 가격과 포함 범위가, 비교하는 사람에게는 판단 기준과 한계가 필요할 수 있습니다. 정보 글의 출처·작성자처럼 독자가 확인할 근거를 페이지 목적에 맞게 보완하세요. 수치나 이름이 있다는 사실만으로 정보의 정확성이 검증되지는 않습니다.</p>
           <p><a href="aeo-score.html">AEO 진단 해설 보기</a></p>
         </article>
@@ -198,14 +198,14 @@
         </article>
         <article id="guide-score-limit">
           <h3>SEO 점수가 높으면 상단 노출이 보장되나요?</h3>
-          <p>보장되지 않습니다. 검색 순위에는 검색어와의 관련성, 콘텐츠 품질, 경쟁 페이지와 사용자 상황 등 여러 요소가 작용합니다. 체커 점수는 외부에서 확인 가능한 기술 조건만 요약하며 실제 검색 순위를 계산하지 않습니다.</p>
+          <p>보장되지 않습니다. 검색 순위에는 검색어와의 관련성, 콘텐츠 품질, 경쟁 페이지와 사용자 상황 등 여러 요소가 작용합니다. 체커 점수는 외부에서 확인 가능한 기술·콘텐츠 구조 조건을 요약하며 실제 검색 순위를 계산하지 않습니다.</p>
           <p>점수보다 중요한 것은 각 항목의 확인 근거와 수정 방법입니다. 개선 뒤에는 같은 URL을 다시 점검하고, 네이버 서치어드바이저와 Google Search Console의 실제 수집·색인 상태를 함께 확인하세요.</p>
           <p><a href="seo-score-limit.html">SEO 점수의 한계 자세히 보기</a></p>
           <p>판정 범위는 <a href="https://developers.google.com/search/docs/fundamentals/third-party-seo" target="_blank" rel="noopener noreferrer">Google의 외부 SEO 도구 안내</a>와 <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener noreferrer">AI 검색 최적화 공식 가이드</a>를 참고합니다.</p>
         </article>
       </div>
     </div>
-    <div class="seo-learning-cta reveal"><p>주소를 입력하면 네이버·구글의 기술 조건과 AI 검색 접근, 콘텐츠 참고 항목을 확인할 수 있습니다.</p><a class="btn primary" href="#checker">내 사이트 진단하기</a></div>
+    <div class="seo-learning-cta reveal"><p>주소를 입력하면 네이버·구글의 기술 조건과 AI 검색 접근, AEO 콘텐츠 진단 점수를 확인할 수 있습니다.</p><a class="btn primary" href="#checker">내 사이트 진단하기</a></div>
   </div>
 </section>
 </main>
@@ -219,6 +219,6 @@
 <div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
 <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle"><div class="preview-dialog"><div class="preview-top"><div class="preview-title" id="previewTitle">포트폴리오 미리보기</div><button class="preview-close" id="previewClose" type="button" aria-label="미리보기 닫기">×</button></div><img class="preview-image" id="previewImage" alt="포트폴리오 확대 이미지"></div></div>
 <script src="site.js?v=20261016seo"></script>
-<script type="module" src="seochecker.js?v=20261107"></script>
+<script type="module" src="seochecker.js?v=20261108-aeo"></script>
 </body>
 </html>

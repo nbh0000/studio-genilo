@@ -14,3 +14,6 @@ Primary action: analyze a URL with an optional target query; read evidence and a
 - Purchase amount 150,000 KRW per immutable report. Access is server-enforced. No hidden paid content in HTML, preview payloads, export or storage.
 - Use native disclosure, visible focus, reduced motion and announced request/error states. No new animation or imagery required.
 - Official-update evidence uses the same reading surface: current page observations first, a collapsed registry with a native status filter below. Coverage labels describe the checker's implementation, never the inspected site's pass/fail state. Show the review date and limits of manual checks.
+
+- Score cards show technical scores for Naver/Google/GEO and a separately labeled AEO content-structure diagnostic score. Preserve unknown/N/A in evidence, exclude them from score denominators, and show unavailable scores as “— / 측정 불가”.
+- Omit the redundant assessment headline (additional checks or review counts) from all score cards; retain status counts and strongest/priority findings. Explain AEO score scope inside the expanded results.
