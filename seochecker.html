@@ -29,7 +29,8 @@
 <link href="fonts.css" rel="stylesheet">
 <link href="site.css?v=20261016e" rel="stylesheet">
 <link href="cyber.css?v=20261020" rel="stylesheet">
-<link href="seochecker.css?v=20261108-guideaccess" rel="stylesheet">
+<link href="seochecker.css?v=20261108-guide98" rel="stylesheet">
+<link href="seo-guide-observations.css?v=20261108-guideprepare" rel="stylesheet">
 <link rel="preconnect" href="https://api.genilo.kr">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,11 +71,6 @@
     <form class="chk-form" id="chkForm" novalidate>
       <label for="chkUrl">점검할 웹페이지 주소 <span>(필수)</span></label><div class="chk-input"><input id="chkUrl" name="url" type="text" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="chkInputHelp chkPublicNotice chkError" placeholder="https://example.com/service…"><button class="btn primary" type="submit" id="chkBtn">점검 시작</button></div>
       <p class="chk-public-notice" id="chkPublicNotice">점검한 페이지의 주소·제목·점수는 최근 진단 목록에 공개됩니다. 주소의 쿼리·해시와 입력한 검색어, 개인 가이드 리포트는 공개하지 않습니다.</p>
-      <div class="guide-fields">
-        <label for="chkQuery">목표 검색어 <span>(선택)</span><input id="chkQuery" name="targetQuery" maxlength="120" autocomplete="off" placeholder="예: 소상공인 홈페이지 제작 비용…"></label>
-        <label for="chkPageType">페이지 유형<select id="chkPageType" name="pageType"><option value="auto">본문에서 추정</option value="home">홈페이지</option><option value="service">서비스 소개</option><option value="article">정보 글·가이드</option><option value="product">상품 상세</option><option value="local">지역 업체</option><option value="tool">도구·계산기</option><option value="category">목록·카테고리</option></select></label>
-      </div>
-      <details class="guide-options"><summary>고객·지역·비교 페이지 설정</summary><div class="guide-fields"><label for="chkAudience">대상 고객<input id="chkAudience" name="audience" maxlength="120" autocomplete="off" placeholder="예: 처음 홈페이지를 만드는 소상공인…"></label><label for="chkRegion">대상 지역<input id="chkRegion" name="region" maxlength="80" autocomplete="off" placeholder="예: 서울 마포구…"></label></div><label for="chkCompetitors">비교할 페이지 주소 <span>(선택, 최대 2개)</span><textarea id="chkCompetitors" name="competitors" rows="2" maxlength="4100" spellcheck="false" placeholder="주소를 한 줄에 하나씩 입력하세요…" aria-describedby="chkCompareHelp"></textarea></label><p id="chkCompareHelp">입력한 공개 페이지의 정보 구성을 비교합니다. 실제 검색 순위나 경쟁 사이트 전체를 조사하는 기능은 아닙니다.</p><label class="guide-checkbox"><input id="chkRelated" name="includeRelated" type="checkbox" checked>같은 사이트의 연결된 페이지도 표본 점검</label></details>
       <p class="notice chk-note" id="chkInputHelp">점검 항목과 판정은 무료입니다. 상세 근거와 수정 방법을 담은 가이드 리포트는 건당 150,000원입니다. <span id="chkQuota"></span></p>
       <div class="guide-account"><span id="guideAccount">로그인하면 구매한 리포트를 다시 볼 수 있습니다.</span><a href="/login.html?auth=login" id="guideLogin">로그인·회원가입</a><button type="button" id="guideHistoryButton" hidden>내 리포트</button><button type="button" id="guideLogout" hidden>로그아웃</button></div>
       <div id="guideHistory" hidden></div>
@@ -239,6 +235,6 @@
 <div class="mobile-bar"><a class="btn outline" href="contact.html">상담하기</a><a class="btn primary" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer">카카오톡 상담</a></div>
 <div class="preview-modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="previewTitle"><div class="preview-dialog"><div class="preview-top"><div class="preview-title" id="previewTitle">포트폴리오 미리보기</div><button class="preview-close" id="previewClose" type="button" aria-label="미리보기 닫기">×</button></div><img class="preview-image" id="previewImage" alt="포트폴리오 확대 이미지"></div></div>
 <script src="site.js?v=20261016seo"></script>
-<script type="module" src="seochecker.js?v=20261108-guideaccess"></script>
+<script type="module" src="seochecker.js?v=20261108-guide98"></script>
 </body>
 </html>

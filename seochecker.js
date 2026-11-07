@@ -1,4 +1,4 @@
-import { guideHeaders, guideContext, renderGuide, initGuide } from './seo-guide.js?v=20261108-guideaccess';
+import { guideHeaders, guideContext, renderGuide, initGuide } from './seo-guide.js?v=20261108-guide98';
 (async function(){
   const API=(location.hostname==='localhost'||location.hostname==='127.0.0.1')?'http://127.0.0.1:8787':'https://api.genilo.kr';
   const $=id=>document.getElementById(id);
@@ -266,7 +266,7 @@ import { guideHeaders, guideContext, renderGuide, initGuide } from './seo-guide.
       stages.forEach(li=>{li.classList.remove('on');li.classList.add('done')});
       setQuota(data.quota);
       const q=new URL(location.href);q.searchParams.set('u',data.summary.finalUrl);q.searchParams.delete('report');history.replaceState(null,'',q);
-      render(data);renderGuide(data.guideReport);
+      render(data);renderGuide(data.guideReport,data);
       const savedStatus=$('chkRecentSaveStatus');
       savedStatus.hidden=data.recentSaved!==false;
       savedStatus.textContent=data.recentSaved===false?'진단은 완료됐지만 공개 기록에 저장하지 못했습니다.':'';

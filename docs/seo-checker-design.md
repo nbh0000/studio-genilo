@@ -2,12 +2,12 @@
 
 Mode: Operate / Read. Preserve Studio Genilo's existing dark violet identity.
 Audience: site owners deciding which technical and editorial changes to make.
-Primary action: analyze a URL with an optional target query; read evidence and a purchased guide.
+Primary action: analyze a URL; read evidence and a purchased guide.
 
 - Base #171717, surface #202024, text #f0f0f8, secondary #b8b8c5, accent #c86df0, error #ff7b87.
 - Reuse --font-sans (Pretendard Variable). Body 16px/1.7, secondary 14px, section titles 22px. Korean word-break: keep-all; URLs may wrap anywhere.
 - Reuse --max: 1180px. Form max 860px, report prose max 76ch. Spacing 8/12/16/24/32px; controls minimum 44px.
-- One primary URL action. Query and page type visible; audience, region and comparison URLs in native details.
+- One primary URL action. Omit query, page type, audience, region, comparison URLs and related-page options from the free form; new free scans explicitly disable related-page collection.
 - The report is a reading surface: findings separated by rules, evidence next to recommendation. No fabricated scores for editorial quality or rank predictions.
 - Breakpoints: single column below 640px, flexible two-column input above; validate 375/768/1024/1440px.
 - Inaccessible or unmeasured data stays visibly unknown. Loading never pretends to know completed server stages.
@@ -31,6 +31,11 @@ Primary action: analyze a URL with an optional target query; read evidence and a
 
 ## Purchased guide
 
+- Hide the entire locked purchase surface without replacement copy or reserved space when all four raw Naver/Google/AEO/GEO scores are finite numbers from 98 through 100. Missing, null, nonnumeric and out-of-range scores retain the offer; restored reports use the saved score preview. A later low/unknown result restores the offer. This does not change the separate exact-100 consulting rule.
+- Authorized purchased or owner-IP reports remain visible and downloadable at every score. Existing saved report context remains readable even though its optional form inputs have been removed.
+- Existing pending-order recovery and returned-payment errors remain available without price or promotional content even when the high-score purchase offer is hidden.
+- Paid guide configuration uses a plain labeled form within the purchase surface: required target query, page type, optional audience/region and up to two optional competitor URLs. Audience and region guide content review; search observation conditions are separately shown from the provider response. Saving changed conditions creates a separate immutable report; it never changes an already purchased snapshot. Disabled purchase states explain unavailable service readiness honestly. Authorized owner-IP draft reports use the same form before generation without a purchase action.
+- After authorized purchase, generation is an explicit action. Show pending, running, partial and failure states without fabricated observations; refresh generation status with read-only requests. The browser never automatically repeats generation submissions. Downloads appear only for a complete or explicitly partial generated artifact; legacy purchased artifacts remain readable.
 - Keep the same reading surface and two-column purchase area. Describe actual deliverables in one concise list: technical evidence and repairs, content placement and priority, downloadable HTML/JSON. Use no generic feature cards or promises of authored copy or search rankings.
 - Server authorization alone enables full technical, blocker, official-update and editorial evidence. Downloads contain the complete authorized snapshot; the HTML is a standalone printable document, not a promised PDF service.
 - Price remains 150,000 KRW for one saved report. Missing storage or billing readiness disables purchase with an honest preparation message. Account login never overrides this state; existing payment recovery remains separate.

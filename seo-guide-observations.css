@@ -1,0 +1,26 @@
+.guide-observations{margin-top:40px;scroll-margin-top:100px}
+.guide-observations>h3{font-size:24px;line-height:1.45}
+.guide-observations h4{font-size:18px;line-height:1.5;margin:24px 0 12px}
+.guide-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-color:var(--checker-accent) var(--guide-surface)}
+.guide-table-scroll:focus-visible{outline:2px solid var(--checker-accent);outline-offset:4px}
+.guide-observations table{width:100%;min-width:620px;border-collapse:collapse;margin:16px 0;font-size:14px;font-variant-numeric:tabular-nums}
+.guide-observations table,.guide-observations th,.guide-observations td{font-family:var(--font-sans);letter-spacing:normal}
+.guide-observations caption{text-align:left;font-weight:600;padding-bottom:12px;color:var(--guide-text)}
+.guide-observations th,.guide-observations td{border-bottom:1px solid var(--line-strong);padding:14px 12px;text-align:left;vertical-align:top}
+.guide-observations th:first-child{width:45%;font-weight:400}
+.guide-observations th span,.guide-observations th a,.guide-observations td span,.guide-observations td small{display:block;margin-top:4px}
+.guide-observations td small{font-size:13px;color:var(--guide-text)}
+.guide-observations th small{display:block;margin-top:8px;font-size:12px;color:var(--guide-text)}
+.guide-observations a{color:var(--checker-accent);overflow-wrap:anywhere;text-underline-offset:3px}
+.guide-rank-engine{margin-top:28px}
+.guide-observation-detail{border-bottom:1px solid var(--line-strong)}
+.guide-observation-detail>summary{cursor:pointer;min-height:44px;padding:16px 0;font-weight:600;overflow-wrap:anywhere}
+.guide-search-results{list-style:none;margin:0;padding:0}
+.guide-search-results li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid var(--line-strong)}
+.guide-search-results p,.guide-observation-notes{font-size:14px;color:var(--guide-text);line-height:1.75}
+.guide-observation-notes{padding-left:22px}
+.guide-observation-notes li{margin:8px 0}
+.guide-report .guide-comparison-evidence>div{grid-template-columns:1fr;gap:4px;margin:20px 0}
+.guide-comparison-evidence dt{font-weight:600;color:var(--fg);font-size:16px}
+@media(max-width:640px){.guide-observations>h3{font-size:22px}.guide-observations th,.guide-observations td{padding:12px 10px}}
+@media print{.guide-table-scroll{overflow:visible}.guide-observations table{min-width:0}.guide-observations a{color:#333}}
