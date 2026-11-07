@@ -8,24 +8,52 @@ Disallow: /login.html
 # AI 검색·사용자 요청형 크롤러는 공개 페이지 접근 허용
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 User-agent: Claude-User
 Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
-# 모델 학습용 수집은 검색 노출 정책과 분리해 차단
+# AI 크롤러도 공개 페이지 접근 허용 (이름을 지정한 그룹은 * 그룹을 대신하므로 비공개 경로 차단을 반복)
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
+Disallow: /admin.html
+Disallow: /auth-callback.html
+Disallow: /workspace.html
+Disallow: /login.html
 
 Sitemap: https://genilo.kr/sitemap.xml

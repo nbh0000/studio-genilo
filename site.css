@@ -492,3 +492,111 @@ body[data-theme="light"] .cursor{mix-blend-mode:multiply;background:radial-gradi
 .hero-tel span{font-size:.62rem;letter-spacing:.26em;color:var(--accent-2,#b36cff)}
 .hero-tel:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
 @media (max-width:640px){.hero-tel{width:100%;justify-content:center;height:44px}}
+
+/* 홈(index) 안내 구역: 핵심 요약·목차, 상품 비교, 자주 묻는 질문, 참고 자료 */
+.ix{padding:clamp(72px,6vw + 40px,132px) 0;-webkit-tap-highlight-color:transparent}
+.ix a,.ix [tabindex]{touch-action:manipulation}
+.ix .wrap{width:min(var(--max),calc(100% - 2*clamp(16px,4vw,40px)))}
+.ix-h2{margin:0;font-size:clamp(1.3rem,1rem + 1.1vw,1.9rem);line-height:1.3;letter-spacing:-.025em;font-weight:700;color:var(--fg);scroll-margin-top:120px}
+.ix h3{scroll-margin-top:120px}
+.ix-lead{max-width:62ch;margin:14px 0 0;color:rgba(240,240,248,.78);font-size:clamp(.95rem,.9rem + .2vw,1.05rem);line-height:1.8}
+.ix a:focus-visible,.ix .ix-table:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
+
+/* 은은한 실사 배경: 이미 받은 이미지를 재사용해 추가 요청을 만들지 않는다 */
+.ix-summary,.ix-faq{isolation:isolate;overflow:hidden}
+.ix-summary:before,.ix-faq:before{content:"";position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:.16;filter:saturate(.55);pointer-events:none}
+.ix-summary:before{background-image:url(hero-lounge.webp);-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent)}
+.ix-faq:before{background-image:url(ai-letters-1600.webp);opacity:.1;-webkit-mask-image:linear-gradient(180deg,transparent,#000 25%,#000 75%,transparent);mask-image:linear-gradient(180deg,transparent,#000 25%,#000 75%,transparent)}
+
+/* 핵심 요약 + 목차 */
+.ix-summary-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,4vw,64px);align-items:start}
+.ix-summary-main{container-type:inline-size}
+.ix-facts{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line-strong)}
+.ix-facts li{padding:16px 0;border-bottom:1px solid var(--line)}
+.ix-facts b{display:block;font-size:clamp(1rem,.95rem + .25vw,1.15rem);font-weight:700;letter-spacing:-.01em}
+.ix-facts span{display:block;margin-top:4px;color:rgba(240,240,248,.66);font-size:.86rem}
+@container (min-width:320px){.ix-facts{grid-template-columns:1fr 1fr;column-gap:clamp(16px,4cqi,28px)}}
+@container (min-width:760px){.ix-facts{grid-template-columns:repeat(4,1fr)}.ix-facts li{padding:18px 0 20px}}
+.ix-meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin:22px 0 0;color:rgba(240,240,248,.62);font-size:.8rem}
+.ix-meta time{font-variant-numeric:tabular-nums;color:rgba(240,240,248,.86)}
+.ix-toc{border-left:1px solid var(--line-strong);padding-left:clamp(18px,2vw,28px)}
+.ix-toc-label{margin:0 0 10px;color:rgba(240,240,248,.62);font-size:.82rem}
+.ix-toc ol{margin:0;padding:0;list-style:none;counter-reset:ixtoc}
+.ix-toc li{counter-increment:ixtoc}
+.ix-toc a{display:flex;gap:14px;align-items:baseline;min-height:44px;padding:10px 0;color:rgba(240,240,248,.86);font-size:.95rem;border-bottom:1px solid var(--line);transition:color .2s}
+.ix-toc a:before{content:counter(ixtoc);min-width:1.2em;font-family:var(--font-mono);font-size:.74rem;color:var(--accent-2)}
+.ix-toc a:active{color:var(--fg);transform:translateY(1px)}
+
+/* 상품 비교 표 */
+.ix-head{max-width:760px}
+.ix-table{position:relative;margin-top:clamp(24px,3vw,40px);overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;border-top:1px solid var(--line-strong);scrollbar-width:thin}
+.ix-table table{width:100%;min-width:640px;border-collapse:collapse;font-size:clamp(.88rem,.85rem + .15vw,.98rem)}
+.ix-table th,.ix-table td{padding:clamp(12px,1.2vw,18px) clamp(12px,1.4vw,22px);border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.6}
+.ix-table th{font-family:var(--font-sans);letter-spacing:-.01em}
+.ix-table thead th{color:var(--fg);font-weight:700;font-size:.95rem}
+.ix-table tbody th{color:rgba(240,240,248,.66);font-weight:500;font-size:.88rem;white-space:nowrap}
+.ix-table td{color:rgba(240,240,248,.84);font-weight:400;white-space:normal}
+.ix-table td b{color:var(--fg);font-size:1.02em}
+.ix-table th:first-child{padding-left:0}
+.ix-table tbody tr:first-child td{font-weight:700}
+.ix-note{margin:16px 0 0;color:rgba(240,240,248,.66);font-size:.86rem}
+.ix-note a,.ix-faq-list a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(165,49,219,.7)}
+@media (max-width:719px){
+  .ix-table th:first-child{position:sticky;left:0;z-index:1;padding-right:18px;background:linear-gradient(90deg,#0d0c10 82%,rgba(13,12,16,0))}
+  .ix-table{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .ix-table.is-end{-webkit-mask-image:none;mask-image:none}
+}
+
+/* 자주 묻는 질문 */
+.ix-faq-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,4vw,72px);align-items:start}
+.ix-contact{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.ix-contact a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:52px;padding:12px 0;border-bottom:1px solid var(--line);color:var(--fg);font-family:var(--font-mono);font-size:.86rem}
+.ix-contact span{font-family:var(--font-sans);color:rgba(240,240,248,.66);font-size:.84rem}
+.ix-contact a:active{transform:translateY(1px)}
+.ix-faq-list{border-top:1px solid var(--line-strong)}
+.ix-faq-list article{padding:clamp(20px,2.2vw,30px) 0;border-bottom:1px solid var(--line)}
+.ix-faq-list h3{margin:0;font-size:clamp(1.02rem,.95rem + .35vw,1.25rem);line-height:1.5;letter-spacing:-.015em;font-weight:700}
+.ix-faq-list p{max-width:68ch;margin:10px 0 0;color:rgba(240,240,248,.8);font-size:clamp(.94rem,.9rem + .15vw,1rem);line-height:1.8}
+
+/* 참고 자료 */
+.ix-refs{padding-top:clamp(40px,4vw,72px)}
+.ix-refs-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(20px,3vw,48px);align-items:start;padding-top:clamp(28px,3vw,40px);border-top:1px solid var(--line)}
+.ix-ref-list{list-style:none;margin:0;padding:0}
+.ix-ref-list a{display:grid;gap:3px;min-height:44px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--fg);font-size:.95rem;line-height:1.5}
+.ix-ref-list span{color:rgba(240,240,248,.6);font-size:.78rem}
+.ix-ref-list a:active{transform:translateY(1px)}
+
+@media (hover:hover) and (pointer:fine){
+  .ix-toc a:hover,.ix-ref-list a:hover,.ix-contact a:hover{color:var(--accent-2)}
+  .ix-note a:hover,.ix-faq-list a:hover{text-decoration-color:var(--fg)}
+}
+
+/* 태블릿 */
+@media (min-width:768px){
+  .ix-refs-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+}
+/* 데스크톱 */
+@media (min-width:1024px){
+  .ix-summary-grid{grid-template-columns:minmax(0,1fr) minmax(220px,300px)}
+  .ix-toc{position:sticky;top:120px}
+  .ix-faq-grid{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}
+  .ix-faq-side{position:sticky;top:120px}
+}
+/* 큰 화면 */
+@media (min-width:1600px){
+  .ix .wrap{width:min(1400px,calc(100% - 160px))}
+  .ix-summary-grid{grid-template-columns:minmax(0,1fr) 340px}
+}
+/* 가로 모드 휴대폰: sticky 해제 */
+@media (orientation:landscape) and (max-height:520px){
+  .ix-toc,.ix-faq-side{position:static}
+  .ix{padding:56px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .ix-toc a,.ix-ref-list a,.ix-contact a{transition:none}
+}
+
+/* 홈 히어로 배경: 장식 이미지라 CSS 배경으로 두고 <head>에서 preload */
+.hero-art .hero-art-bg{position:absolute;inset:0;background:url(hero-lounge.webp) center center/cover no-repeat;filter:brightness(.82)}
+@media(max-width:900px){.hero-art .hero-art-bg{background-position:28% center;opacity:.55;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 96%);mask-image:linear-gradient(180deg,#000 45%,transparent 96%)}}
+.ix-table caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
