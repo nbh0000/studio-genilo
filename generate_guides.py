@@ -409,14 +409,14 @@ def render_header(active):
     checker_active = ' class="tool-pill active"' if active == "seochecker" else ' class="tool-pill"'
     return f'''<a class="skip-link" href="#content">본문으로 바로가기</a>
 <div class="grid-bg"></div><div class="scan"></div><div class="hud" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-<header id="header"><div class="pill"><a class="logo" href="index.html" aria-label="제닐로 홈"><span>Studio <em>Genilo</em></span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></a><nav class="links" aria-label="주요 메뉴"><a href="about.html"{about_active}>회사소개</a><a href="portfolio.html">제작 사례</a><a href="insights.html">검색 가이드</a><a href="contact.html">상담하기</a></nav><div class="hright"><a class="tel-pill" href="tel:01048193459" aria-label="전화 상담 010-4819-3459"><span>TEL</span>010-4819-3459</a><a{checker_active} href="seochecker.html"><span>SEO·AEO·GEO 체커</span></a><a class="chat-pill" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a><button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu" id="menuBtn">☰</button></div></div></header>
-<nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴" aria-hidden="true" inert><a href="index.html"><span>01</span>홈</a><a href="about.html"><span>02</span>회사소개</a><a href="insights.html"><span>03</span>검색 가이드</a><a href="seochecker.html"><span>04</span>SEO 체커</a><a href="contact.html"><span>05</span>상담하기</a><a class="tel" href="tel:01048193459"><span>TEL</span>010-4819-3459</a></nav>
+<header id="header"><div class="pill"><a class="logo" href="index.html" aria-label="제닐로 홈"><span>Studio <em>Genilo</em></span><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></a><nav class="links" aria-label="주요 메뉴"><a href="about.html"{about_active}>회사소개</a><a href="portfolio.html">제작 사례</a><a href="insights.html">검색 가이드</a><a href="contact.html">상담하기</a></nav><div class="hright"><a class="tel-pill" href="tel:01048193459" aria-label="전화 상담 010-4819-3459"><span>TEL</span>010-4819-3459</a><a{checker_active} href="https://genilo-seo.com/seochecker.html"><span>SEO·AEO·GEO 체커</span></a><a class="chat-pill" href="https://pf.kakao.com/_MsZFX" target="_blank" rel="noopener noreferrer"><span>카카오톡 무료 상담</span></a><button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu" id="menuBtn">☰</button></div></div></header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴" aria-hidden="true" inert><a href="index.html"><span>01</span>홈</a><a href="about.html"><span>02</span>회사소개</a><a href="insights.html"><span>03</span>검색 가이드</a><a href="https://genilo-seo.com/seochecker.html"><span>04</span>SEO 체커</a><a href="contact.html"><span>05</span>상담하기</a><a class="tel" href="tel:01048193459"><span>TEL</span>010-4819-3459</a></nav>
 <aside class="scroll-meter" aria-hidden="true"><span class="rail"><span class="tick" id="tick"></span></span><span id="scrollPct">000%</span></aside>'''
 
 
 def render_footer(kind):
-    mobile = '<a class="btn outline" href="insights.html">검색 가이드</a><a class="btn primary" href="seochecker.html#checker">무료 SEO 점검</a>' if kind == "checker" else '<a class="btn outline" href="about.html">회사소개</a><a class="btn primary" href="contact.html">제작 상담</a>'
-    return f'''<footer><div class="wrap"><div class="foot-top"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="index.html">홈</a><a href="about.html">회사소개</a><a href="insights.html">검색 가이드</a><a href="seochecker.html">SEO 체커</a><a href="contact.html">상담하기</a></nav></div><div class="biz"><span><i>상호</i>에이아이 스튜디오 제닐로</span><span><i>대표자</i>문지석</span><span><i>사업자등록번호</i>846-11-03049</span><span><i>전화</i>010-4819-3459</span><span><i>이메일</i>nbh3459@gmail.com</span><span><i>주소</i>서울특별시 마포구 만리재로6길 3-20 (공덕동)</span></div><div class="copy"><span>© Studio Genilo. All rights reserved.</span><span>제닐로 · WEB DESIGN &amp; SEARCH</span></div></div></footer><nav class="mobile-bar" aria-label="빠른 메뉴">{mobile}</nav><script src="guide.js?v=20261017"></script>'''
+    mobile = '<a class="btn outline" href="insights.html">검색 가이드</a><a class="btn primary" href="https://genilo-seo.com/seochecker.html#checker">무료 SEO 점검</a>' if kind == "checker" else '<a class="btn outline" href="about.html">회사소개</a><a class="btn primary" href="contact.html">제작 상담</a>'
+    return f'''<footer><div class="wrap"><div class="foot-top"><div class="foot-logo">Studio <em>Genilo</em></div><nav class="foot-nav" aria-label="하단 메뉴"><a href="index.html">홈</a><a href="about.html">회사소개</a><a href="insights.html">검색 가이드</a><a href="https://genilo-seo.com/seochecker.html">SEO 체커</a><a href="contact.html">상담하기</a></nav></div><div class="biz"><span><i>상호</i>에이아이 스튜디오 제닐로</span><span><i>대표자</i>문지석</span><span><i>사업자등록번호</i>846-11-03049</span><span><i>전화</i>010-4819-3459</span><span><i>이메일</i>nbh3459@gmail.com</span><span><i>주소</i>서울특별시 마포구 만리재로6길 3-20 (공덕동)</span></div><div class="copy"><span>© Studio Genilo. All rights reserved.</span><span>제닐로 · WEB DESIGN &amp; SEARCH</span></div></div></footer><nav class="mobile-bar" aria-label="빠른 메뉴">{mobile}</nav><script src="guide.js?v=20261017"></script>'''
 
 
 def schema_for(page):
@@ -456,7 +456,7 @@ def related_pages(page):
 def render_guide(page):
     active = "about" if page["kind"] == "service" else "seochecker"
     page_label = "홈페이지 제작 가이드" if page["kind"] == "service" else "SEO·GEO·AEO 검색 가이드"
-    primary_href = "about.html" if page["kind"] == "service" else "seochecker.html#checker"
+    primary_href = "about.html" if page["kind"] == "service" else "https://genilo-seo.com/seochecker.html#checker"
     primary_label = "제닐로 제작 방식 보기" if page["kind"] == "service" else "무료 SEO 체커에서 점검하기"
     secondary_href = "index.html" if page["kind"] == "service" else "insights.html"
     secondary_label = "제닐로 메인으로" if page["kind"] == "service" else "검색 가이드 더 보기"
@@ -467,7 +467,7 @@ def render_guide(page):
         paragraph_html = ''.join(f'<p>{esc(paragraph)}</p>' for paragraph in paragraphs)
         bullets_html = '<ul>' + ''.join(f'<li>{esc(item)}</li>' for item in bullets) + '</ul>' if bullets else ''
         if page["kind"] != "service" and index == 2:
-            bullets_html += '<div class="guide-note"><strong>직접 확인하기</strong>이 항목은 공개 URL을 <a href="seochecker.html#checker">Studio Genilo SEO 체커</a>에 입력해 네이버 SEO·구글 SEO·AEO·GEO 결과로 나눠 볼 수 있습니다.</div>'
+            bullets_html += '<div class="guide-note"><strong>직접 확인하기</strong>이 항목은 공개 URL을 <a href="https://genilo-seo.com/seochecker.html#checker">Studio Genilo SEO 체커</a>에 입력해 네이버 SEO·구글 SEO·AEO·GEO 결과로 나눠 볼 수 있습니다.</div>'
         sections.append(f'<section id="section-{index + 1}" class="reveal"><h2>{esc(heading)}</h2>{paragraph_html}{bullets_html}</section>')
     faq_html = ''.join(f'<li><h3>{esc(question)}</h3><p>{esc(answer)}</p></li>' for question, answer in page["faq"])
     summary_html = ''.join(f'<li>{esc(item)}</li>' for item in page["summary"])
@@ -509,7 +509,7 @@ def render_hub():
 
 
 def write_sitemap():
-    static_pages = ["", "about.html", "portfolio.html", "contact.html", "pricing.html", "process.html", "privacy.html", "terms.html", "seochecker.html", "insights.html", "llms.txt", "llms-full.txt"]
+    static_pages = ["", "about.html", "portfolio.html", "contact.html", "pricing.html", "process.html", "privacy.html", "terms.html", "insights.html", "llms.txt", "llms-full.txt"]
     urls = static_pages + [f"{page['slug']}.html" for page in ALL_GUIDES]
     rows = [f"  <url><loc>{BASE}/{' ' if path == '' else esc(path)}</loc><lastmod>{PUBLISHED}</lastmod></url>".replace("/ </loc>", "/</loc>") for path in urls]
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(rows) + '\n</urlset>\n', encoding="utf-8", newline="\n")
